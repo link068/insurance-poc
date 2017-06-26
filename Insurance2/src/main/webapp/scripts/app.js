@@ -118,7 +118,7 @@ angular
         url:'/manager'
     })
     .state('dashboard.third',{
-        templateUrl:'pages/third.html',
+        templateUrl:'pages/third.jsp',
         url:'/third'
     })
       
