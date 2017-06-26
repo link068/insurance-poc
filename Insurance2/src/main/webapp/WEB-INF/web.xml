@@ -17,4 +17,5 @@
 		<servlet-name>HelloServlet</servlet-name>
 		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
+
 </web-app>
