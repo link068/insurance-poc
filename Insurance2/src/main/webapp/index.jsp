@@ -1,70 +1,63 @@
 <!doctype html>
 <html class="no-js">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/sb-admin-2.css">
-    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
-    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
-    <!-- endbuild -->
-    
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
-    <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-    <script src="bower_components/Chart.js/Chart.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="js/sb-admin-2.js"></script>
-    <!-- endbuild -->
-
-
-
-    <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-    <!-- Custom CSS -->
-
-    <!-- Custom Fonts -->
-
-    <!-- Morris Charts CSS -->
-    <!-- <link href="styles/morrisjs/morris.css" rel="stylesheet"> -->
-
-
+    <%@include file="imports/imports.jsp" %>
     </head>
    
     <body>
 
-    <div ng-app="sbAdminApp">
+    <div ng-app="sbAdminApp" controller="IndexController">
 
-        <div ui-view></div>
+        <div>
+        	<div id="wrapper">
+
+        <!-- Navigation -->
+            
+        <header></header>
+        <!-- /.navbar-top-links -->
+        
+               
+        <!-- /.navbar-static-side -->
+
+            <div id="page-wrapper" style="min-height: 561px;">
+
+                <div>
+                	<div>
+  <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">Welcome To Insurance Company</h1>
+      </div>
+      <!-- /.col-lg-12 -->
+  </div>
+	
+	<div class="row">
+		<div class="col-md-5">
+			<img class="img-responsive" src="img/insurance.jpg" alt=""/>
+		</div>
+    <div class="col-md-7">
+    	<div style="font-size:30px">
+				Select a product to get insured
+			</div>
+    
+			<ul style="list-style-type:none;display:inline-block;float: left;">
+				<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-car" aria-hidden="true"></i> Auto</a></li>
+				<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-ship" aria-hidden="true"></i> Boat</a></li>
+				<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-truck" aria-hidden="true"></i> RV/Trailer</a></li>
+				<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-search" aria-hidden="true"></i> More</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>
+                	
+                </div>
+                
+            </div>
+            <!-- /#page-wrapper -->
+    </div>
+        </div>
 
     </div>
 

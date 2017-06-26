@@ -1,7 +1,4 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -38,6 +35,9 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="js/sb-admin-2.js"></script>
+        <script src="scripts/directives/header/header.js"></script>
+        <script src="scripts/directives/header/header-notification/header-notification.js"></script>
+        <script src="scripts/directives/notifications/notifications.js"></script>
     <!-- endbuild -->
 
 
@@ -57,17 +57,3 @@
     <!-- Morris Charts CSS -->
     <!-- <link href="styles/morrisjs/morris.css" rel="stylesheet"> -->
 
-
-    </head>
-   
-    <body>
-
-    <div ng-app="sbAdminApp">
-
-        <div ui-view></div>
-
-    </div>
-
-    </body>
-
-</html>

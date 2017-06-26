@@ -13,8 +13,22 @@
 				$('#example').DataTable();
 			} );
 		</script>
+		<%@include file="../imports/imports.jsp" %>
 	</head>
 <body>
+<div id="wrapper" ng-app="sbAdminApp" controller="CustomerController">
+
+        <!-- Navigation -->
+            
+        <header></header>
+        <!-- /.navbar-top-links -->
+        
+               
+        <!-- /.navbar-static-side -->
+
+            <div id="page-wrapper" style="min-height: 561px;">
+
+                <div>
 
 <div>
   <div class="row">
@@ -79,6 +93,10 @@
   <!-- /.row -->
 
 </div>
-
+</div>
+                
+            </div>
+            <!-- /#page-wrapper -->
+</div>
 </body>
 </html>
