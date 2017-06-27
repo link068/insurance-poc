@@ -11,13 +11,22 @@
 	http://www.springframework.org/schema/context/spring-context-4.3.xsd
 	http://www.springframework.org/schema/mvc
 	http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
-
-    <mvc:annotation-driven/>
-    
-    <context:component-scan base-package="com.controllers" />
-    
-    
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-    p:prefix="/pages/" p:suffix=".jsp" p:order="2"/>
-
+	
+	<!--  Add support for component scanning -->
+	<mvc:annotation-driven/>
+	
+	<!-- Component scanning -->
+	<context:component-scan base-package="com.insurance" />
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+	p:prefix="/pages/" p:suffix=".jsp" p:order="2"/>
+	
+	<!-- Resource mapping css, js, image, etc... -->
+	<mvc:resources location="/scripts/" mapping="/scripts/**" />
+	<mvc:resources location="/images/" mapping="/images/**" />
+	<mvc:resources location="/bower_components/" mapping="/bower_components/**" />
+	<mvc:resources location="/styles/" mapping="/styles/**" />
+	<mvc:resources location="/js/" mapping="/js/**" />
+	<mvc:resources location="/pages/" mapping="/pages/**" />
+	
 </beans>

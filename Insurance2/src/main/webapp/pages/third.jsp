@@ -13,10 +13,15 @@
 				$('#example').DataTable();
 			} );
 		</script>
+		
+		<%@include file="../imports/imports.jsp" %>
 	</head>
 <body>
 
-<div>
+<div id="wrapper" ng-app="sbAdminApp" controller="ThirdController">
+
+	<header></header>
+	
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header" style="text-align:center">Third Party Dashboard</h1>
@@ -282,18 +287,11 @@
                     <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Verify</a>  <a href=""><i class="fa fa-send"> Send</i></a></td>
                   </tr>
                 </tbody>
-              </table>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.panel-body -->
-         </div>
-         <!-- /.panel -->
-      </div>
-      <!-- /.col-lg-12 -->
-	  </div>
-	  <!-- /.row -->
-
-
+              </table>              <!-- /.table-responsive -->
+            </div>            <!-- /.panel-body -->
+         </div>         <!-- /.panel -->
+      </div>      <!-- /.col-lg-12 -->
+	  </div>	  <!-- /.row -->
 </div>
 
 </body>

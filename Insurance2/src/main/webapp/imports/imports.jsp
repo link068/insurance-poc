@@ -33,14 +33,14 @@
     <!-- endbuild -->
     
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="js/sb-admin-2.js"></script>
-        <script src="scripts/directives/header/header.js"></script>
-        <script src="scripts/directives/header/header-notification/header-notification.js"></script>
-        <script src="scripts/directives/notifications/notifications.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+    <script src="scripts/directives/header/header.js"></script>
+    <script src="scripts/directives/header/header-notification/header-notification.js"></script>
+    <script src="scripts/directives/notifications/notifications.js"></script>
+    <script src="scripts/directives/dashboard/stats/stats.js"></script>
+    <script src="scripts/directives/validations/confirmPass.js"></script>
     <!-- endbuild -->
-
-
 
     <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,4 +1,19 @@
-<div class="container-register">
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>Registration Page</title>
+		
+		<%@include file="../imports/imports.jsp" %>
+</head>
+
+<body>
+	<div id="wrapper" ng-app="sbAdminApp" controller="RegistrationCtrl">
+		
+		<header></header>
+		
+		<div class="container-register">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
@@ -58,4 +73,8 @@
                 </div>
             </div>
         </div>
-    </div>
+  	</div> <!-- container-register -->
+  </div> <!-- ng-app -->
+  
+</body>
+</html>
