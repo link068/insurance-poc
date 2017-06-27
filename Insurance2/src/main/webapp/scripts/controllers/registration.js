@@ -7,6 +7,6 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('RegistrationCtrl', function($scope,$position) {
+  .controller('RegistrationController', function($scope,$position) {
 	  
   });

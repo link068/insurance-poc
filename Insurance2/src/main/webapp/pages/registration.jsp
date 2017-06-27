@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" controller="RegistrationCtrl">
+	<div id="wrapper" ng-app="sbAdminApp" controller="RegistrationController">
 		
 		<header></header>
 		
