@@ -5,7 +5,7 @@
  * @description
  * # sbAdminApp
  *
- * Main module of the application.
+ * Main module of the application. fixing changes
  */
 angular
   .module('sbAdminApp', [
