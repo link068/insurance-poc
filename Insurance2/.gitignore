@@ -1,3 +1,4 @@
+
 <<<<<<< Updated upstream
 node_modules
 npm-debug.log
@@ -8,6 +9,11 @@ bower_components
 .idea
 .properties
 .MF
+Insurance2.iml
+.idea
+target
+insurance2.iml
+library
 =======
 /target/
 >>>>>>> Stashed changes
