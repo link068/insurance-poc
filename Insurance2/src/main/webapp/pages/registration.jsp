@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" controller="RegistrationController">
+	<div id="wrapper" ng-app="sbAdminApp" ng-controller="RegistrationController">
 		
 		<header></header>
 		
@@ -21,7 +21,7 @@
                         <h3 class="panel-title">Registration Form</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" novalidate name="myForm" ng-submit="submitInfo();">
+                        <form role="form" novalidate name="myForm">
                             <fieldset>
                             	<div class="form-group">
 	                            	<label>Name</label>
@@ -34,6 +34,10 @@
   									<span ng-show="myForm.email.$error.required">Email is Required.</span></span>
   									<span ng-model-options="{ debounce: 250 }" style="color:red" ng-show="myForm.email.$error.minlength">Email must be at least 6 characters long</span>
 	                                <input class="form-control" placeholder="E-mail" name="email" type="email" ng-model="email" required ng-minlength="6">
+	                                <label>Password</label>
+	                                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+  									<span ng-show="myForm.password.$error.required">"Password" Number is Required.</span></span>
+	                                <input class="form-control" placeholder="Password" name=""password"" type="password" ng-model="password" required>
 	                                <label>Mobile Number</label>
 	                                <span style="color:red" ng-show="myForm.mobile.$dirty && myForm.mobile.$invalid">
   									<span ng-show="myForm.mobile.$error.required">Mobile Number is Required.</span></span>
@@ -63,7 +67,7 @@
   									<span ng-show="myForm.education.$error.required">Education is Required.</span></span>
 									<input class="form-control" placeholder="Education" name="education" type="text" ng-model="education" required>
                                 </div>
-                                <input type="submit" class="btn btn-lg btn-success btn-block" value="Submit Registration "ng-disabled="myForm.email.$dirty && myForm.email.$invalid 
+                                <input type="submit" class="btn btn-lg btn-success btn-block" value="Submit Registration " ng-click="submitInfo()" ng-disabled="myForm.email.$dirty && myForm.email.$invalid 
                                 || myForm.name.$dirty && myForm.name.$invalid || myForm.ssn.$dirty && myForm.ssn.$invalid || myForm.salary.$dirty && myForm.salary.$invalid
                                 || myForm.address.$dirty && myForm.address.$invalid || myForm.dob.$dirty && myForm.dob.$invalid || myForm.occupation.$dirty && myForm.occupation.$invalid
                                 || myForm.education.$dirty && myForm.education.$invalid ||  myForm.mobile.$dirty && myForm.mobile.$invalid" > 
