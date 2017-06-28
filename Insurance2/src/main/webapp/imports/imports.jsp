@@ -34,6 +34,9 @@
     
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/registration.js"></script>
+    <script src="scripts/model/RegisterFrom.js"></script>
+    <script src="scripts/factory/registerFactory.js"></script>
     <script src="js/sb-admin-2.js"></script>
     <script src="scripts/directives/header/header.js"></script>
     <script src="scripts/directives/header/header-notification/header-notification.js"></script>
