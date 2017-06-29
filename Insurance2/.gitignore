@@ -7,8 +7,8 @@ dist
 .sass-cache
 bower_components
 .idea
-.properties
-.MF
+*.properties
+*.MF
 Insurance2.iml
 .idea
 target
