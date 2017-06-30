@@ -17,10 +17,10 @@
                 </thead>
                 <tbody>
                   <tr class="gradeA" ng-repeat="application in timedApplications">
-                  	<td>{{application.id}}</td>
-                  	<td>{{application.employee}}</td>
-                  	<td>{{application.originalDate}}</td>
-                  	<td><img ng-click="reAssign()"></td>
+                  	<td>{{application.appplicationId}}</td>
+                  	<td>{{application.assignedEmployee}}</td>
+                  	<td>{{application.assignedDate}}</td>
+                  	<td><img ng-click=""></td>
                   </tr>
                 </tbody>
               </table>              <!-- /.table-responsive -->
