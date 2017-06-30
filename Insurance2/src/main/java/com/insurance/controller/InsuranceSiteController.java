@@ -37,5 +37,9 @@ public class InsuranceSiteController {
 	public String sayHello7(Model model){
 		return "login";
 	}
+	@RequestMapping(value="/thirdManager")
+	public String sayHello8(Model model){
+		return "thirdManager";
+	}
 
 }

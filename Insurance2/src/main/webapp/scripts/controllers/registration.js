@@ -1,15 +1,14 @@
 'use strict';
 /**
  * @ngdoc function
- * @name sbAdminApp.controller:MainCtrl
+ * @name sbAdminApp.controller:RegistrationController
  * @description
- * # MainCtrl
- * Controller of the sbAdminApp
+ * # RegistrationController
+ * Controller for the registration page
  */
-
 angular.module('sbAdminApp')
   .controller('RegistrationController', function($scope,$position,RegisterFactory) {
-	  $scope.submitInfo = function(){
+	  $scope.submitInfo = function(){ 
 		  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
 		  var regData = new CustomerRegisterFrom($scope.name,$scope.email,$scope.password,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education);
 		  console.log("data = " + regData);

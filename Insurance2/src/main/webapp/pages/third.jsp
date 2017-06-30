@@ -15,6 +15,7 @@
 		</script>
 		
 		<%@include file="../imports/imports.jsp" %>
+		<script type="text/javascript" src="scripts/controllers/third.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/third/newApplicationsTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/third/pendingApplicationsTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/third/finishedApplicationsTable.js"></script>

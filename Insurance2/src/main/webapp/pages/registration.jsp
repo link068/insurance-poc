@@ -6,6 +6,9 @@
 		<title>Registration Page</title>
 		
 		<%@include file="../imports/imports.jsp" %>
+		<script src="scripts/controllers/registration.js"></script>
+        <script src="scripts/model/RegisterFrom.js"></script>
+        <script src="scripts/factory/registerFactory.js"></script>
 </head>
 
 <body>
