@@ -15,6 +15,7 @@
 		</script>
 		
 		<%@include file="../imports/imports.jsp" %>
+		<script type="text/javascript" src="scripts/controllers/manager.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/manager/applicationTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/manager/customerTable.js"></script>
 	</head>

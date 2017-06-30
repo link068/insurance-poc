@@ -6,6 +6,7 @@
 		<title>Login Page</title>
 		
 		<%@include file="../imports/imports.jsp" %>
+		<script type="text/javascript" src="scripts/controllers/login.js"></script>
 </head>
 
 <body>
