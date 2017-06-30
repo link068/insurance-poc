@@ -11,6 +11,7 @@
                   <tr>
                     <th>Application Id</th>
                     <th>Date Applied</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
