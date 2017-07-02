@@ -5,7 +5,7 @@
 	<a class="navbar-brand" href="third">Third</a>
 	<a class="navbar-brand" href="thirdManager">Third Manager</a>
 	<a class="navbar-brand" href="login">Login</a>
-	<a class="navbar-brand" href="register">Register</a>
+	<a class="navbar-brand" href="register">New Application</a>
 	
     <!--dropdown
     <li class="dropdown">

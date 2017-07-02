@@ -1,6 +1,6 @@
 angular.module('sbAdminApp')
 .factory("RegisterFactory",function($http,$q,$rootScope,BaseRestURI){
-	 var registerUserURI=BaseRestURI+'createCustomer';
+	 var registerApplicationURI=BaseRestURI+'createApplication';
 	 var registerURI=BaseRestURI+'upload';
 	 var postFrog="http://localhost:8900/upload";
 	 var registerFactory={}; // here we are creating blank in java script
@@ -10,9 +10,9 @@ angular.module('sbAdminApp')
 	           }
 	       }
 	 //this method you have to call explicitly 
-	 registerFactory.registerUser=function(data){
+	 registerFactory.registerApplication=function(data){
 		 	var deferred = $q.defer();
-			$http.post(registerUserURI, data, config).success(function(pdata) {
+			$http.post(registerApplicationURI, data, config).success(function(pdata) {
 				deferred.resolve(pdata);
 			}).error(function(msg, code) {
 				deferred.reject(msg);

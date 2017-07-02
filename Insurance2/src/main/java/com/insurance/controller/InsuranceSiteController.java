@@ -31,7 +31,7 @@ public class InsuranceSiteController {
 	}
 	@RequestMapping(value="/register")
 	public String sayHello6(Model model){
-		return "registration";
+		return "customerApplication";
 	}
 	@RequestMapping(value="/login")
 	public String sayHello7(Model model){
@@ -40,6 +40,10 @@ public class InsuranceSiteController {
 	@RequestMapping(value="/thirdManager")
 	public String sayHello8(Model model){
 		return "thirdManager";
+	}
+	@RequestMapping(value="/customerApplication")
+	public String customerApplication(Model model){
+		return "customerApplication";
 	}
 
 }
