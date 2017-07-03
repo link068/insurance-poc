@@ -2,7 +2,7 @@
       <div class="col-lg-12">
          <div class="panel panel-default">
             <div class="panel-heading">
-                List of Timed Out Applications
+                Assign Applications
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -15,10 +15,15 @@
                   </tr>
                 </thead>
                 <tbody>
+                	<tr class="gradeA">
+                  	<td>A2342</td>
+                  	<td>2017-Jun-19</td>
+                  	<td><a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a></td>
+                  </tr>
                   <tr class="gradeA" ng-repeat="application in newApplications">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied}}</td>
-                  	<td><img ng-click=""></td>
+                  	<td><a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a></td>
                   </tr>
                 </tbody>
               </table>              <!-- /.table-responsive -->
