@@ -6,13 +6,13 @@
 	<title>NewApplication</title>
 	
 	<%@include file="../imports/imports.jsp" %>
-	<script src="scripts/controllers/newApplication.js"></script>
-  <script src="scripts/model/NewApplicationForm.js"></script>
-  <script src="scripts/factory/newApplicationFactory.js"></script>
+	<script src="scripts/controllers/registration.js"></script>
+  <script src="scripts/model/RegisterFrom.js"></script>
+	  <script src="scripts/factory/registerFactory.js"></script>
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" ng-controller="NewApplicationCtrl">
+	<div id="wrapper" ng-app="sbAdminApp" ng-controller="RegistrationController">
 		
 		<header></header>
 		

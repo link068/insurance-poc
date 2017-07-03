@@ -1,5 +1,5 @@
 angular.module('sbAdminApp')
-.factory("NewApplicationFactory",function($http,$q,$rootScope,BaseRestURI){
+.factory("RegisterFactory",function($http,$q,$rootScope,BaseRestURI){
 	 var registerApplicationURI=BaseRestURI+'createApplication';
 	 var registerURI=BaseRestURI+'upload';
 	 var postFrog="http://localhost:8900/upload";
