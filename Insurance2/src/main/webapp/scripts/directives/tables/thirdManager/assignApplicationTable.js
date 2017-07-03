@@ -1,9 +1,9 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name izzyposWebApp.directive:adminPosHeader
+ * @name izzyposWebApp.directive:assignApplicationTable
  * @description
- * # adminPosHeader
+ * # assignApplicationTable
  */
 angular.module('sbAdminApp')
 .directive('assignApplicationTable',function() {

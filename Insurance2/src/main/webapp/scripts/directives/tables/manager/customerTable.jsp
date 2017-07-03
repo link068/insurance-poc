@@ -2,7 +2,7 @@
      <div class="col-lg-12">
         <div class="panel panel-default">
            <div class="panel-heading">
-               List of Applications
+               List of Customers
            </div>
            <!-- /.panel-heading -->
            <div class="panel-body">
@@ -11,108 +11,26 @@
                  <tr>
                    <th>Customer ID</th>
                    <th>Customer name</th>
-                   <th>Application ID</th>
-                   <th>Application Status</th>
-                   <th>Contact</th>
+                   <th>Customer Contact</th>
                    <th>Actions</th>
                  </tr>
                </thead>
                <tbody>
                  <tr class="odd gradeX">
                    <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
+                   <td>Lucy Adam</td>
+                   <td class="center">4087891234</td>
+                   <td class="center">
+	                   <a ng-click=""><i class="fa fa-phone"></i> Contact</a>
+                   </td>
                  </tr>
                  <tr class="even gradeC">
                    <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeA">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeX">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="even gradeC">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeA">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeX">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="even gradeC">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeA">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeX">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="even gradeC">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
-                 </tr>
-                 <tr class="odd gradeA">
-                   <td>C123</td>
-                   <td>John Doe</td>
-                   <td>A456</td>
-                   <td>Pending</td>
-                   <td class="center">4081234567</td>
-                   <td class="center"><a href=""><i class="fa fa-info"> View details</i></a>   <a href=""><i class="fa fa-check-square"></i> Approve</a>  <a href=""><i class="fa fa-trash"> Decline</i></a></td>
+                   <td>Kim Johnson</td>
+                   <td class="center">4087891548</td>
+                   <td class="center">
+	                   <a ng-click=""><i class="fa fa-phone"></i> Contact</a>
+                   </td>
                  </tr>
                </tbody>
              </table> <!-- /.table-responsive -->

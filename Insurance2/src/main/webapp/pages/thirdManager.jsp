@@ -44,8 +44,8 @@
   </div>
   <div class="row" style="margin-left:20em">
   	<stats class="col-centered" number="1" comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
-  	<stats class="col-centered" number="2" comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
-  	<stats class="col-centered" number="3" comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
+  	<stats class="col-centered" number="1" comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
+  	<stats class="col-centered" number="2" comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
   </div>
   <div class="col-lg-12">
   <!-- /.row -->

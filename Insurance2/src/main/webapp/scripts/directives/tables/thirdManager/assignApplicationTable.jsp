@@ -2,10 +2,10 @@
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
-      	Assign Pending Applications
+      	List of Pending Applications
       </div> <!-- /.panel-heading -->
       <div class="panel-body">
-        <table width="100%" class="table table-striped table-bordered table-hover" id="example">
+        <table class="table table-striped table-bordered table-hover" id="example">
           <thead>
             <tr>
               <th>Application Id</th>
@@ -15,23 +15,22 @@
           </thead>
           <tbody>
           	<tr class="gradeA">
-            	<td>A1234</td>
-            	<td>2017-Jun-25</td>
-            	<td><a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a></td>
+            	<td>A2342</td>
+            	<td>2017-June-21</td>
+            	<td>
+            		<a ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a>
+            		<a ng-click=""><i class="fa fa-info"></i> View details</a>
+            	</td>
             </tr>
-            <tr class="gradeA">
-            	<td>A4321</td>
-            	<td>2017-Jun-26</td>
-            	<td><a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a></td>
-            </tr>
-            <tr class="gradeA" ng-repeat="application in newApplications">
-            	<td>{{application.applicationId}}</td>
-            	<td>{{application.dateApplied}}</td>
-            	<td><a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a></td>
+            <tr class="gradeA" ng-repeat="application in assignedApplications">
+            	<td>{{application.appplicationId}}</td>
+            	<td>{{application.assignedEmployee}}</td>
+            	<td>{{application.assignedDate}}</td>
+            	<td><img ng-click=""></td>
             </tr>
           </tbody>
-        </table> <!-- /.table-responsive -->
-      </div> <!-- /.panel-body -->
-    </div> <!-- /.panel -->
-  </div> <!-- /.col-lg-12 -->
-</div> <!-- /.row -->
+        </table>              <!-- /.table-responsive -->
+      </div>            <!-- /.panel-body -->
+    </div>         <!-- /.panel -->
+  </div>      <!-- /.col-lg-12 -->
+</div>

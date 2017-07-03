@@ -1,9 +1,9 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name izzyposWebApp.directive:adminPosHeader
+ * @name izzyposWebApp.directive:employeeTable
  * @description
- * # adminPosHeader
+ * # employeeTable
  */
 angular.module('sbAdminApp')
 .directive('employeeTable',function() {

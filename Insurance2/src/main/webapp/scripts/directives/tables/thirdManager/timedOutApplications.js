@@ -1,9 +1,9 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name izzyposWebApp.directive:adminPosHeader
+ * @name izzyposWebApp.directive:timedOutApplications
  * @description
- * # adminPosHeader
+ * # timedOutApplications
  */
 angular.module('sbAdminApp')
 .directive('timedOutApplications',function() {
