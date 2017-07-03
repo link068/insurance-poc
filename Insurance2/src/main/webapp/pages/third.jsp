@@ -20,6 +20,17 @@
 		<script type="text/javascript" src="scripts/directives/tables/third/pendingApplicationsTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/third/finishedApplicationsTable.js"></script>
 	</head>
+	
+	<style type="text/css">
+		.col-centered {
+	    display:inline-block;
+	    float:none;
+	    /* reset the text-align */
+	    text-align:left;
+	    /* inline-block space fix */
+	    margin-right:-4px;
+		}
+	</style>
 <body>
 
 <div id="wrapper" ng-app="sbAdminApp" controller="ThirdController">
@@ -32,9 +43,9 @@
     </div>
   </div>
   <div class="row" style="margin-left:20em">
-  	<stats number=placeholder comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
-  	<stats number=placeholder comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
-  	<stats number=placeholder comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
+  	<stats class="col-centered" number="1" comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
+  	<stats class="col-centered" number="2" comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
+  	<stats class="col-centered" number="3" comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
   </div>
   <div class="col-lg-12">
   <!-- /.row -->

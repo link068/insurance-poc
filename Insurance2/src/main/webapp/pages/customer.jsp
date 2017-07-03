@@ -17,8 +17,18 @@
 	<script type="text/javascript" src="scripts/controllers/customer.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/applicationStatusTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/insuranceTable.js"></script>
+	
+	<style type="text/css">
+		.col-centered {
+	    display:inline-block;
+	    float:none;
+	    /* reset the text-align */
+	    text-align:left;
+	    /* inline-block space fix */
+	    margin-right:-4px;
+		}
+	</style>
 </head>
-
 
 <body>
 	<div id="wrapper" ng-app="sbAdminApp" controller="CustomerController">
@@ -35,9 +45,9 @@
       	<!-- /.col-lg-12 -->
   		</div>
 		  <div class="row" style="margin-left:20em">
-		  	<stats number=placeholder comments="Apply For Insurance" colour="green" type="pencil"></stats>
-		  	<stats number=placeholder comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable = !applicationsStatusTable"></stats>
-		  	<stats number=placeholder comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable = !insurancesTable"></stats>
+		  	<stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats>
+		  	<stats class="col-centered" number="2" comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable = !applicationsStatusTable"></stats>
+		  	<stats class="col-centered" number="3" comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable = !insurancesTable"></stats>
 		  </div> <!-- /.row -->
 		  <div class="col-lg-12">
   		<application-status-table ng-show="applicationsStatusTable"></application-status-table>

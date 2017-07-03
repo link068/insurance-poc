@@ -19,6 +19,17 @@
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/assignApplicationTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/employeeTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/timedOutApplications.js"></script>
+		
+		<style type="text/css">
+		.col-centered {
+	    display:inline-block;
+	    float:none;
+	    /* reset the text-align */
+	    text-align:left;
+	    /* inline-block space fix */
+	    margin-right:-4px;
+		}
+		</style>
 	</head>
 <body>
 
@@ -32,9 +43,9 @@
     </div>
   </div>
   <div class="row" style="margin-left:20em">
-  	<stats number=placeholder comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
-  	<stats number=placeholder comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
-  	<stats number=placeholder comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
+  	<stats class="col-centered" number="1" comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
+  	<stats class="col-centered" number="2" comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
+  	<stats class="col-centered" number="3" comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
   </div>
   <div class="col-lg-12">
   <!-- /.row -->

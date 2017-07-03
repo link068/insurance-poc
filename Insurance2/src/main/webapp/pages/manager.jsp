@@ -18,6 +18,18 @@
 		<script type="text/javascript" src="scripts/controllers/manager.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/manager/applicationTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/manager/customerTable.js"></script>
+		
+		<style type="text/css">
+		.col-centered {
+	    display:inline-block;
+	    float:none;
+	    /* reset the text-align */
+	    text-align:left;
+	    /* inline-block space fix */
+	    margin-right:-4px;
+		}
+		</style>
+		
 	</head>
 <body>
 <div id="wrapper" ng-app="sbAdminApp" controller="ManagerController">
@@ -25,20 +37,20 @@
 	<header></header>
 	
   <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header" style="text-align:center">Manager Dashboard</h1>
-      </div>
+		<div class="col-lg-12">
+		    <h1 class="page-header" style="text-align:center">Manager Dashboard</h1>
+		</div>
   </div>
   
-	<div class="row" style="margin-left:35em">
-   	<stats number=placeholder comments="View Applications" colour="yellow" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
-   	<stats number=placeholder comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats>
+	<div class="row" style="text-align:center;">
+   	<stats class="col-centered" number="2" comments="View Applications" colour="yellow" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
+   	<stats class="col-centered" number="2" comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats>
   </div>
+  
   <div class="col-lg-12">
-   <!-- /.row -->
   	<application-table ng-show="applicationsTable"></application-table>
   	<customer-table ng-show="customersTable"></customer-table>
-  	</div>
+ 	</div>
 </div>	<!-- wrapper -->
 
 </body>
