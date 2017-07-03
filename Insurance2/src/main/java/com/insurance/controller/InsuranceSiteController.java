@@ -11,34 +11,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class InsuranceSiteController {
 
 	@RequestMapping(value="/index")
-	public String sayHello(Model model){
+	public String showIndex(Model model){
 		return "index";
 	}
 
 	@RequestMapping(value="/customer")
-	public String sayHello3(Model model){
+	public String showCustomer(Model model){
 		return "customer";
 	}
 
 	@RequestMapping(value="/manager")
-	public String sayHello4(Model model){
+	public String showManager(Model model){
 		return "manager";
 	}
 
 	@RequestMapping(value="/third")
-	public String sayHello5(Model model){
+	public String showThird(Model model){
 		return "third";
 	}
 	@RequestMapping(value="/register")
-	public String sayHello6(Model model){
+	public String showRegistration(Model model){
 		return "customerApplication";
 	}
 	@RequestMapping(value="/login")
-	public String sayHello7(Model model){
+	public String showLogin(Model model){
 		return "login";
 	}
 	@RequestMapping(value="/thirdManager")
-	public String sayHello8(Model model){
+	public String showThirdManager(Model model){
 		return "thirdManager";
 	}
 	@RequestMapping(value="/customerApplication")
