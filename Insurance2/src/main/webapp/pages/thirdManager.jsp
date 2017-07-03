@@ -33,14 +33,14 @@
   </div>
   <div class="row" style="margin-left:20em">
   	<stats number=placeholder comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
-  	<stats number=placeholder comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="employeeTable = !employeeTable"></stats>
-  	<stats number=placeholder comments="View Employees" colour="green" type="users" ng-click="timedTable = !timedTable"></stats>
+  	<stats number=placeholder comments="Timed Out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
+  	<stats number=placeholder comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
   </div>
   <div class="col-lg-12">
   <!-- /.row -->
   	<assign-application-table ng-show="assignTable"></assign-application-table>
-  	<employee-table ng-show="employeeTable"></employee-table>
   	<timed-out-applications ng-show="timedTable"></timed-out-applications>
+  	<employee-table ng-show="employeeTable"></employee-table>
   <!-- /.row -->
   </div>
 </div>

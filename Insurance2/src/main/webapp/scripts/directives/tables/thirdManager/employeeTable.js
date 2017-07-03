@@ -6,7 +6,7 @@
  * # adminPosHeader
  */
 angular.module('sbAdminApp')
-.directive('EmployeeTable',function() {
+.directive('employeeTable',function() {
 return {
     templateUrl:'scripts/directives/tables/thirdManager/employeeTable.jsp',
     restrict: 'E',
