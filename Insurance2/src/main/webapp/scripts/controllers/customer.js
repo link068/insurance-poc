@@ -1,10 +1,10 @@
 'use strict';
 /**
  * @ngdoc function
- * @name sbAdminApp.controller:MainCtrl
+ * @name sbAdminApp.controller:CustomerController
  * @description
- * # MainCtrl
- * Controller of the sbAdminApp
+ * # CustomerController
+ * CustomerController of the sbAdminApp
  */
 angular.module('sbAdminApp')
   .controller('CustomerController', function($scope,$position) {

@@ -2,7 +2,7 @@
       <div class="col-lg-12">
          <div class="panel panel-default">
             <div class="panel-heading">
-                List of Timed Out Applications
+                List of Pending Applications
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -15,7 +15,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="gradeA" ng-repeat="application in employeeApplications | filter: {status: 'pending'">
+                	<tr class="gradeA">
+                  	<td>A3456</td>
+                  	<td>2017-June-20</td>
+                  	<td>
+                  		<a ng-click=""><i class="fa fa-info"></i> View details</a>
+                  		<a ng-click=""><i class="fa fa-pencil-square-o"> Finalize</i></a>
+                 		</td>
+                  </tr>
+                  <tr class="gradeA" ng-repeat="application in employeeApplications | filter: {status: 'pending'}">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied}}</td>
                   	<td><img ng-click=""></td>

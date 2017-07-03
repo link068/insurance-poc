@@ -15,6 +15,14 @@
             </tr>
           </thead>
           <tbody>
+            <tr class="gradeA">
+            	<td>A5678</td>
+            	<td>2017-June-15</td>
+            	<td>
+            		<a ng-click=""><i class="fa fa-info"></i> View details</a>
+            		<a ng-click=""><i class="fa fa-check-square-o"> Notify manager</i></a>
+            	</td>
+            </tr>
             <tr class="gradeA" ng-repeat="application in employeeApplications | filter: {status:'finalized'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied}}</td>

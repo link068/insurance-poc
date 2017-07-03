@@ -1,9 +1,9 @@
 'use strict';
 /**
  * @ngdoc function
- * @name sbAdminApp.controller:ThirdCtrl
+ * @name sbAdminApp.controller:ThirdController
  * @description
- * # ThirdCtrl
+ * # ThirdController
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
