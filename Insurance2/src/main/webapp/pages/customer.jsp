@@ -45,9 +45,9 @@
       	<!-- /.col-lg-12 -->
   		</div>
 		  <div class="row" style="margin-left:20em">
-		  	<stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats>
-		  	<stats class="col-centered" number="2" comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable = !applicationsStatusTable"></stats>
-		  	<stats class="col-centered" number="3" comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable = !insurancesTable"></stats>
+		  	<a href="newApplication"><stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats></a>
+		  	<stats class="col-centered" number="2" comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable=!applicationsStatusTable"></stats>
+		  	<stats class="col-centered" number="3" comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
 		  </div> <!-- /.row -->
 		  <div class="col-lg-12">
   		<application-status-table ng-show="applicationsStatusTable"></application-status-table>
