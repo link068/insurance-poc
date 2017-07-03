@@ -16,7 +16,7 @@
 
 		<div class="container">
 	    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-6 col-md-offset-3">
           <div class="login-panel panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Please Sign In</h3>
@@ -34,9 +34,13 @@
                       <label>
                           <input name="remember" type="checkbox" value="Remember Me?">Remember Me
                       </label>
+                      <ul class="formLinks">
+												<li><a href="">Forgot your password</a>?</li>
+												<li><a href="registration">Create your account</a></li>
+											</ul>
                   </div>
                   <!-- Change this to a button or input when using this as a form -->
-                  <a ui-sref="dashboard.home" class="btn btn-lg btn-success btn-block">Login</a>
+                  <a href="customer" class="btn btn-lg btn-success btn-block">Login</a>
                 </fieldset>
               </form>
             </div>
