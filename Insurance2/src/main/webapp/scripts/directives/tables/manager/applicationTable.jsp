@@ -57,6 +57,17 @@
                 <a href=""><i class="fa fa-send"> Send to 3rd party</i></a>
 							</td>
             </tr>
+            <tr class="gradeA" ng-repeat="application in applications">
+							<td>{{application.applicationId}}</td>
+							<td>{{application.email}}</td>
+							<td>{{application.name}}</td>
+							<td>{{application.status}}</td>
+							<td>{{application.assignedEmployee}}</td>
+							<td class="center"><a href=""><i class="fa fa-info"> View details</i></a>
+								<a href=""><i class="fa fa-check"></i> Approve</a>
+								<a href=""><i class="fa fa-times"> Decline</i></a>
+                <a href=""><i class="fa fa-send"> Send to 3rd party</i></a></td>
+						</tr>
           </tbody>
         </table> <!-- /.table-responsive -->
       </div>  <!-- /.panel-body -->
