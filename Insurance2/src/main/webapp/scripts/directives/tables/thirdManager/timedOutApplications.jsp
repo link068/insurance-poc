@@ -16,6 +16,15 @@
                   </tr>
                 </thead>
                 <tbody>
+                	<tr class="gradeA">
+                  	<td>A2342</td>
+                  	<td>John Doe</td>
+                  	<td>2017-June-21</td>
+                  	<td>
+                  		<a ng-href="" ng-click=""><i class="fa fa-hand-o-left"></i> Re-assign</a>
+                  		<a ng-href="" ng-click=""><i class="fa fa-hand-o-right"></i> Send back to pending</a>
+                  	</td>
+                  </tr>
                   <tr class="gradeA" ng-repeat="application in timedApplications">
                   	<td>{{application.appplicationId}}</td>
                   	<td>{{application.assignedEmployee}}</td>
