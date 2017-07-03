@@ -1,8 +1,8 @@
 angular.module('sbAdminApp')
 .factory("RegisterFactory",function($http,$q,$rootScope,BaseRestURI){
-	 var registerApplicationURI=BaseRestURI+'createApplication';
+	 var registerApplicationURI=BaseRestURI+'createCustomer';
 	 var registerURI=BaseRestURI+'upload';
-	 var postFrog="http://localhost:8900/upload";
+	 var postFrog="http://localhost:8080/upload";
 	 var registerFactory={}; // here we are creating blank in java script
 	 var config = {
 	           headers : {

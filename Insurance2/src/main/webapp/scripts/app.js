@@ -13,7 +13,7 @@ var app=angular
     'ui.bootstrap',
     'angular-loading-bar',
   ]);
-app.constant("BaseRestURI", "http://localhost:8081/insurance-bank/webapi/");
+app.constant("BaseRestURI", "http://localhost:8080/insurance-bank/webapi/");
   
 
 
