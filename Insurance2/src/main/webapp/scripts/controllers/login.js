@@ -7,14 +7,11 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('LoginCtrl', function($scope,$http, $rootScope) {
-	  $rootScope.login=null;
+  .controller('LoginCtrl', function($scope,$http) {
+
 	  var validate = function()
 	  {
-		  //get ng model form data
-		  //validate
-		  //assign rootScope login entity
-		  //redirect
+		  
 	  }
 	  
   });

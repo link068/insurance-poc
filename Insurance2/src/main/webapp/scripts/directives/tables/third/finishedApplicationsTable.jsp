@@ -23,7 +23,7 @@
             		<a ng-click=""><i class="fa fa-check-square-o"> Notify manager</i></a>
             	</td>
             </tr>
-            <tr class="gradeA" ng-repeat="application in employeeApplications | filter: {status:'finalized'}">
+            <tr class="gradeA" ng-repeat="application in applications | filter: {status:'finalized'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied}}</td>
             	<td><img ng-click=""></td>

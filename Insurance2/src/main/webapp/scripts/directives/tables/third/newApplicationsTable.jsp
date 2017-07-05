@@ -22,7 +22,7 @@
                   		<a ng-click=""><i class="fa fa-folder-open"> Review</i></a>
                   	</td>
                   </tr>
-                  <tr class="gradeA" ng-repeat="application in newApplications">
+                  <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'new'}">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied}}</td>
                   	<td><img ng-click=""></td>

@@ -23,7 +23,7 @@
                   		<a ng-click=""><i class="fa fa-pencil-square-o"> Finalize</i></a>
                  		</td>
                   </tr>
-                  <tr class="gradeA" ng-repeat="application in employeeApplications | filter: {status: 'pending'}">
+                  <tr class="gradeA" ng-repeat="application in applications | filter: {status: 'pending'}">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied}}</td>
                   	<td><img ng-click=""></td>

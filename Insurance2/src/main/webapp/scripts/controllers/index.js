@@ -7,6 +7,6 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('IndexController', function($scope,$position) {
+  .controller('IndexController', function($scop) {
 	  
   });

@@ -7,25 +7,24 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('ThirdManagerController', function($scope,$http, BaseURI) {
+  .controller('ThirdManagerController', function($scope,$http, BaseRestURI) {
 	  init();
-	  alert("hello");
 
 	  
 	  function init(){
-		  var remote=$http.get(BaseURI+"/application/status/pending");
+		  var remote=$http.get(BaseRestURI+"/application/status?status=pending");
 			remote.then(function(serverResponse){
 				$scope.timedApplications=serverResponse.data;
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
-			var remote=$http.get(BaseURI+"/login");
-			remote.then(function(serverResponse){
-				$scope.loginEntities=serverResponse.data;
-			},function(serverResponse){
-				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-			});
-			var remote=$http.get(BaseURI+"/application/status/new");
+//			var remote=$http.get(BaseRestURI+"/login");
+//			remote.then(function(serverResponse){
+//				$scope.loginEntities=serverResponse.data;
+//			},function(serverResponse){
+//				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//			});
+			var remote=$http.get(BaseRestURI+"/application/status?status=new");
 			remote.then(function(serverResponse){
 				$scope.newApplications=serverResponse.data;
 			},function(serverResponse){

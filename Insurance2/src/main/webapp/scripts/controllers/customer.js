@@ -7,12 +7,12 @@
  * CustomerController of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('CustomerController', function($scope,$http) {
+  .controller('CustomerController', function($scope,$http, BaseRestURI) {
 	  init();
 	  
 	  function init(){
 		  
-			var remote=$http.get(BaseURI+"/application/email" + $rootScope.login.email);
+			var remote=$http.get(BaseRestURI+"/application/email?email=");
 			remote.then(function(serverResponse){
 				$scope.customerApplications=serverResponse.data;
 			},function(serverResponse){
