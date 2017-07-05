@@ -15,17 +15,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                	<tr class="gradeA">
-                  	<td>A2342</td>
-                  	<td>2017-June-20</td>
-                  	<td>
-                  		<a ng-click=""><i class="fa fa-folder-open"> Review</i></a>
-                  	</td>
-                  </tr>
                   <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'new'}">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied}}</td>
-                  	<td><img ng-click=""></td>
+                  	<td>
+                  		<a ng-click=""><i class="fa fa-folder-open"> Review</i></a>
+                  	</td>
                   </tr>
                 </tbody>
               </table>              <!-- /.table-responsive -->

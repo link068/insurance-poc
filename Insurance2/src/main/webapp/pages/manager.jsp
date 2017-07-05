@@ -43,8 +43,8 @@
   </div>
   
 	<div class="row" style="text-align:center;">
-   	<stats class="col-centered" number="3" comments="View Applications" colour="yellow" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
-   	<stats class="col-centered" number="2" comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats>
+   	<stats class="col-centered" number={{applications.length}} comments="View Applications" colour="yellow" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
+   	<stats class="col-centered" number={{customers.length}} comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats>
   </div>
   
   <div class="col-lg-12">

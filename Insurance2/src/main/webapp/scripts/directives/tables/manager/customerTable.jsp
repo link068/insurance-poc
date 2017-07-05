@@ -16,22 +16,6 @@
                  </tr>
                </thead>
                <tbody>
-                 <tr class="odd gradeX">
-                   <td>C123</td>
-                   <td>Lucy Adam</td>
-                   <td class="center">4087891234</td>
-                   <td class="center">
-	                   <a ng-click=""><i class="fa fa-phone"></i> Contact</a>
-                   </td>
-                 </tr>
-                 <tr class="even gradeC">
-                   <td>C123</td>
-                   <td>Kim Johnson</td>
-                   <td class="center">4087891548</td>
-                   <td class="center">
-	                   <a ng-click=""><i class="fa fa-phone"></i> Contact</a>
-                   </td>
-                 </tr>
                  <tr class="gradeA" ng-repeat="customer in customers">
 							<td>{{customer.email}}</td>
 							<td>{{customer.name}}</td>

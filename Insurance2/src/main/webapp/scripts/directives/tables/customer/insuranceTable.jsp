@@ -8,7 +8,7 @@
         <table width="100%" class="table table-striped table-bordered table-hover" id="example">
           <thead>
           	<tr>
-          		<th>Application Id</th>
+          	  <th>Application Id</th>
               <th>Date Applied</th>
               <th>Policy</th>
               <th>Status</th>
@@ -16,17 +16,12 @@
             </tr>
           </thead>
           <tbody>
-          	<tr class="gradeA">
-			       	<td>A5678</td>
-			       	<td>2017-June-15</td>
-			       	<td>Property</td>
-			       	<td>Approved</td>
-			       	<td><a ng-click=""><i class="fa fa-info"></i> View details</a></td>
-			       </tr>
-						<tr class="gradeA" ng-repeat="application in customerApplications | filter: !{status: 'accepted'}">
+						<tr class="gradeA" ng-repeat="application in customerApplications | filter: {status: 'accepted'}">
+							<td>{{application.applicationId}}</td>
 							<td>{{application.dateApplied}}</td>
 							<td>{{application.policy}}</td>
-							<td><img ng-click=""></td>
+							<td>{{application.status}}</td>
+							<td><a ng-click=""><i class="fa fa-info"></i> View details</a></td>
 						</tr>
         	</tbody>
         </table> <!-- /.table-responsive -->

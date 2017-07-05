@@ -12,7 +12,7 @@ angular.module('sbAdminApp')
 	  
 	  function init(){
 		  
-			var remote=$http.get(BaseRestURI+"/application/email?email=");
+			var remote=$http.get(BaseRestURI+"application/email?email=carlosp@gmail.com");
 			remote.then(function(serverResponse){
 				$scope.customerApplications=serverResponse.data;
 			},function(serverResponse){

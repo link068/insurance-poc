@@ -15,21 +15,15 @@
             </tr>
           </thead>
           <tbody>
-          	<tr class="gradeA">
-            	<td>A2342</td>
-            	<td>John Doe</td>
-            	<td>2017-June-21</td>
+            <tr class="gradeA" ng-repeat="application in assignedApplications">
+            	<td>{{application.applicationId}}</td>
+            	<td>{{application.assignedEmployee}}</td>
+            	<td>{{application.dateAssigned}}</td>
             	<td>
             		<a ng-click=""><i class="fa fa-hand-o-left"></i> Re-assign</a>
             		<a ng-click=""><i class="fa fa-info"></i> View details</a>
             		<a ng-click=""><i class="fa fa-hand-o-right"></i> Send back to pending</a>
             	</td>
-            </tr>
-            <tr class="gradeA" ng-repeat="application in timedApplications">
-            	<td>{{application.appplicationId}}</td>
-            	<td>{{application.assignedEmployee}}</td>
-            	<td>{{application.assignedDate}}</td>
-            	<td><img ng-click=""></td>
             </tr>
           </tbody>
         </table>              <!-- /.table-responsive -->

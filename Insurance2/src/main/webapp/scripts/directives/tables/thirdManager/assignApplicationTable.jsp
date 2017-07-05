@@ -14,19 +14,13 @@
             </tr>
           </thead>
           <tbody>
-          	<tr class="gradeA">
-            	<td>A2342</td>
-            	<td>2017-June-21</td>
+            <tr class="gradeA" ng-repeat="application in newApplications">
+            	<td>{{application.applicationId}}</td>
+            	<td>{{application.dateApplied}}</td>
             	<td>
             		<a ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a>
             		<a ng-click=""><i class="fa fa-info"></i> View details</a>
             	</td>
-            </tr>
-            <tr class="gradeA" ng-repeat="application in assignedApplications">
-            	<td>{{application.appplicationId}}</td>
-            	<td>{{application.assignedEmployee}}</td>
-            	<td>{{application.assignedDate}}</td>
-            	<td><img ng-click=""></td>
             </tr>
           </tbody>
         </table>              <!-- /.table-responsive -->

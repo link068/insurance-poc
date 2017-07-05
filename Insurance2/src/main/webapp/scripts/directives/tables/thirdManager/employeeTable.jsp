@@ -15,23 +15,11 @@
             </tr>
           </thead>
           <tbody>
-          	<tr class="gradeA">
-            	<td>John Doe</td>
-            	<td>jd@insurance.com</td>
-            	<td>A2342</td>
-            	<td><a ng-click=""><i class="fa fa-envelope"></i> Send message</a></td>
-            </tr>
-            <tr class="gradeX">
-            	<td>Jane Smith</td>
-            	<td>js@insurance.com</td>
-            	<td>A9876</td>
-            	<td><a ng-click=""><i class="fa fa-envelope"></i> Send message</a></td>
-            </tr>
             <tr class="gradeA" ng-repeat="employee in loginEntities | filter: {role: 'third party employee'}">
             	<td>{{employee.name}}</td>
             	<td>{{employee.email}}</td>
             	<td>{{employee.appId}}</td>
-            	<td><img ng-click=""></td>
+            	<td><a ng-click=""><i class="fa fa-envelope"></i> Send message</a></td>
             </tr>
           </tbody>
         </table>              <!-- /.table-responsive -->

@@ -14,7 +14,7 @@ angular.module('sbAdminApp')
 	  function init(){
 		  var remote=$http.get(BaseRestURI+"/application/status?status=pending");
 			remote.then(function(serverResponse){
-				$scope.timedApplications=serverResponse.data;
+				$scope.assignedApplications=serverResponse.data;
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
