@@ -7,7 +7,7 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('LoginCtrl', function($scope,$position, $rootScope) {
+  .controller('LoginCtrl', function($scope,$http, $rootScope) {
 	  $rootScope.login=null;
 	  var validate = function()
 	  {

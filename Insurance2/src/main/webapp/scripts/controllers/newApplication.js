@@ -7,7 +7,7 @@
  * Controller of the new application
  */
 angular.module('sbAdminApp')
-  .controller('NewApplicationCtrl', function($scope,$position) {
+  .controller('NewApplicationCtrl', function($scope,$http) {
 	  $scope.submitInfo = function(){ 
 		  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
 		  var regData = new CustomerApplicationFrom($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education);

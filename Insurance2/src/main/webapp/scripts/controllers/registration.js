@@ -7,7 +7,7 @@
  * Controller for the registration page
  */
 angular.module('sbAdminApp')
-  .controller('RegistrationController', function($scope,$position,$window,RegisterFactory) {
+  .controller('RegistrationController', function($scope,$http,$window,RegisterFactory) {
 	  $scope.submitInfo = function(){ 
 		  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
 		  var regData = new CustomerApplicationFrom($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education);

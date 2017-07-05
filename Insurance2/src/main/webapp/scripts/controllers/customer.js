@@ -7,7 +7,7 @@
  * CustomerController of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('CustomerController', function($scope,$position) {
+  .controller('CustomerController', function($scope,$http) {
 	  init();
 	  
 	  function init(){

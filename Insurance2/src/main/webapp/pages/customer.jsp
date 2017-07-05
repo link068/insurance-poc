@@ -31,7 +31,7 @@
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" controller="CustomerController">
+	<div id="wrapper" ng-app="sbAdminApp" ng-controller="CustomerController">
     <!-- Navigation -->
     <header></header>
     <!-- /.navbar-top-links -->

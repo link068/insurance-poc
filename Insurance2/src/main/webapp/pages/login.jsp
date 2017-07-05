@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" controller="LoginCtrl">
+	<div id="wrapper" ng-app="sbAdminApp" ng-controller="LoginCtrl">
 		
 		<header></header>
 

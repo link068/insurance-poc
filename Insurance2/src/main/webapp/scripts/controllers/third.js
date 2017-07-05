@@ -7,8 +7,9 @@
  * Controller of the sbAdminApp
  */
 angular.module('sbAdminApp')
-  .controller('ThirdController', function($scope,$position,$rootScope) {
+  .controller('ThirdController', function($scope,$http,$rootScope,BaseURI) {
 	  init();
+	  alert("hello");
 	  
 	  function init(){
 		  var remote=$http.get(BaseURI+"/application/status/new");

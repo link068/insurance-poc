@@ -33,7 +33,7 @@
 	</head>
 <body>
 
-<div id="wrapper" ng-app="sbAdminApp" controller="ThirdManagerController">
+<div id="wrapper" ng-app="sbAdminApp" ng-controller="ThirdManagerController">
 
 	<header></header>
 	

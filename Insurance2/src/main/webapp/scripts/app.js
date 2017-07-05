@@ -7,13 +7,10 @@
  *
  * Main module of the application. fixing changes
  */
-var app=angular
-  .module('sbAdminApp', [
-    'oc.lazyLoad',
-    'ui.bootstrap',
-    'angular-loading-bar',
-  ]);
-app.constant("BaseRestURI", "http://localhost:8080/insurance-bank/webapi/");
+angular
+  .module('sbAdminApp', []);
+angular.module('sbAdminApp').constant("BaseRestURI", "http://localhost:8080/insurance-bank/webapi/");
+
   
 
 
