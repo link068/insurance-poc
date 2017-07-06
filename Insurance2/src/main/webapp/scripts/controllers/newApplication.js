@@ -7,16 +7,16 @@
  * Controller of the new application
  */
 angular.module('sbAdminApp')
-  .controller('NewApplicationCtrl', function($scope,$http) {
+  .controller('NewApplicationCtrl', function($scope,$http,$window,NewApplicationFactory) {
 	  $scope.submitInfo = function(){ 
 		  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
-		  var regData = new CustomerApplicationFrom($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education);
+		  var regData = new NewApplicationForm($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education);
 		  console.log("data = " + regData);
 		  console.log("name = "+regData.name);
 		  
-		  var remote = RegisterFactory.registerApplication(regData);
+		  var remote = NewApplicationFactory.registerApplication(regData);
 		   remote.then(function(serverResponse){
-			   alert("succss");
+			   alert("success");
 		   	   //alert(serverResponse.data.status);
 			   $window.location.href = '/Insurance2/index.jsp';
 			   //$location.path("/index");

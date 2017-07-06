@@ -6,13 +6,13 @@
 	<title>NewApplication</title>
 	
 	<%@include file="../imports/imports.jsp" %>
-	<script src="scripts/controllers/registration.js"></script>
-  <script src="scripts/model/RegisterFrom.js"></script>
-	  <script src="scripts/factory/registerFactory.js"></script>
+	<script src="scripts/controllers/newApplication.js"></script>
+  <script src="scripts/model/NewApplicationForm.js"></script>
+	<script src="scripts/factory/NewApplicationFactory.js"></script>
 </head>
 
 <body>
-	<div id="wrapper" ng-app="sbAdminApp" ng-controller="RegistrationController">
+	<div id="wrapper" ng-app="sbAdminApp" ng-controller="NewApplicationCtrl">
 		
 		<header></header>
 		
@@ -55,7 +55,7 @@
                   <input class="form-control" placeholder="DOB" name="dob" type="date" ng-model="dob" required>
                   <label>Occupation</label>
                   <span style="color:red" ng-show="myForm.occupation.$dirty && myForm.occupation.$invalid">
-									<span ng-show="myForm.occupation.$error.required">Father's Name is Required.</span></span>
+									<span ng-show="myForm.occupation.$error.required">Occupation is Required.</span></span>
                   <input class="form-control" placeholder="Occupation" name="occupation" type="text" ng-model="occupation" required>
                   <label>Salary</label>
                   <span style="color:red" ng-show="myForm.salary.$dirty && myForm.salary.$invalid">
