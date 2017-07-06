@@ -1,3 +1,4 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -36,6 +37,10 @@
     <header></header>
     <!-- /.navbar-top-links -->
     <!-- /.navbar-static-side -->
+	
+		${pageContext.request.contextPath}
+		Customer email: ${email1}
+		Customer password: ${password}
 
     <div id="page-wrapper" style="min-height: 561px;">
   		<div class="row">
