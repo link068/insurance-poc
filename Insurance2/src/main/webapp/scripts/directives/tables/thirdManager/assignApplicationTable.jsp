@@ -16,7 +16,7 @@
           <tbody>
             <tr class="gradeA" ng-repeat="application in newApplications">
             	<td>{{application.applicationId}}</td>
-            	<td>{{application.dateApplied}}</td>
+            	<td>{{application.dateApplied | secondsToDateTime | date:'medium'}}</td>
             	<td>
             		<a ng-click=""><i class="fa fa-hand-o-left"></i> Assign</a>
             		<a ng-click=""><i class="fa fa-info"></i> View details</a>

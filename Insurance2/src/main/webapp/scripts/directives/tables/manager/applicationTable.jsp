@@ -13,6 +13,7 @@
                <th>Customer ID</th>
                <th>Customer name</th>
                <th>Application Status</th>
+               <th>Date Applied</th>
                <th>Agent Contact</th>
                <th>Actions</th>
              </tr>
@@ -23,6 +24,7 @@
 							<td>{{application.email}}</td>
 							<td>{{application.name}}</td>
 							<td>{{application.status}}</td>
+							<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
 							<td>{{application.assignedEmployee}}</td>
 							<td class="center"><a href=""><i class="fa fa-info"> View details</i></a>
 								<a href=""><i class="fa fa-check"></i> Approve</a>

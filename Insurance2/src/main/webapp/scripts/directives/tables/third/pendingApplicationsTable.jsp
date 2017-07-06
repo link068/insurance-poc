@@ -17,7 +17,7 @@
                 <tbody>
                   <tr class="gradeA" ng-repeat="application in applications | filter: {status: 'pending'}">
                   	<td>{{application.applicationId}}</td>
-                  	<td>{{application.dateApplied}}</td>
+                  	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
                   	<td>
                   		<a ng-click=""><i class="fa fa-info"></i> View details</a>
                   		<a ng-click=""><i class="fa fa-pencil-square-o"> Finalize</i></a>

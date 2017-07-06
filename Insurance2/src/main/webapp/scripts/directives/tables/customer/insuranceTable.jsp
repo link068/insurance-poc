@@ -18,7 +18,7 @@
           <tbody>
 						<tr class="gradeA" ng-repeat="application in customerApplications | filter: {status: 'accepted'}">
 							<td>{{application.applicationId}}</td>
-							<td>{{application.dateApplied}}</td>
+							<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
 							<td>{{application.policy}}</td>
 							<td>{{application.status}}</td>
 							<td><a ng-click=""><i class="fa fa-info"></i> View details</a></td>

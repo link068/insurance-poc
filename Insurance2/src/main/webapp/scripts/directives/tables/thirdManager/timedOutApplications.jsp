@@ -18,7 +18,7 @@
             <tr class="gradeA" ng-repeat="application in assignedApplications">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.assignedEmployee.name}}</td>
-            	<td>{{application.dateAssigned}}</td>
+            	<td>{{application.dateAssigned | secondsToDateTime | date:'medium'}}</td>
             	<td>
             		<a ng-click=""><i class="fa fa-hand-o-left"></i> Re-assign</a>
             		<a ng-click=""><i class="fa fa-info"></i> View details</a>

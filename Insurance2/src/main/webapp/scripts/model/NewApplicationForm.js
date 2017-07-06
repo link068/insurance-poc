@@ -8,4 +8,5 @@ function NewApplicationForm(name,email,mobile,address,ssn,dob,occupation,salary,
 	this.occupation=occupation;
 	this.salary=salary;
 	this.education=education;
+	this.status="new";
 };

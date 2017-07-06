@@ -17,7 +17,7 @@
                 <tbody>
                   <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'new'}">
                   	<td>{{application.applicationId}}</td>
-                  	<td>{{application.dateApplied}}</td>
+                  	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
                   	<td>
                   		<a ng-click=""><i class="fa fa-folder-open"> Review</i></a>
                   	</td>
