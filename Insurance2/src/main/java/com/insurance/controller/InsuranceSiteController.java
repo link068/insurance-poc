@@ -16,12 +16,10 @@ public class InsuranceSiteController {
 		return "index";
 	}
 	@RequestMapping(value="/customer")
-	public String showCustomer(@RequestParam("email") String email, @RequestParam("password") String password, Model model){
+	public String showCustomer(@RequestParam("email") String email, Model model){
 
-		model.addAttribute("email1", email);
-		model.addAttribute("password", password);
+		model.addAttribute("email", email);
 		System.out.println("email is " + email);
-		System.out.println("password is " + password);
 
 		return "customer";
 	}

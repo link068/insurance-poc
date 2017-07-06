@@ -35,12 +35,10 @@
 	<div id="wrapper" ng-app="sbAdminApp" ng-controller="CustomerController">
     <!-- Navigation -->
     <header></header>
-    <!-- /.navbar-top-links -->
-    <!-- /.navbar-static-side -->
-	
-		${pageContext.request.contextPath}
-		Customer email: ${email1}
-		Customer password: ${password}
+		
+		<%-- Customer email: ${email1} --%>
+		Customer email: <%= request.getAttribute("email") %>
+		<% application.setAttribute("email1", request.getAttribute("email")); %>
 
     <div id="page-wrapper" style="min-height: 561px;">
   		<div class="row">
