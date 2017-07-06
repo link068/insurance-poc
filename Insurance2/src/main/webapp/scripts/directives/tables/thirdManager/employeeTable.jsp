@@ -10,15 +10,13 @@
             <tr>
               <th>Name</th>
               <th>Email</th>
-              <th>Assigned Application</th>
               <th>Actions</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="gradeA" ng-repeat="employee in loginEntities | filter: {role: 'third party employee'}">
+            <tr class="gradeA" ng-repeat="employee in employees">
             	<td>{{employee.name}}</td>
             	<td>{{employee.email}}</td>
-            	<td>{{employee.appId}}</td>
             	<td><a ng-click=""><i class="fa fa-envelope"></i> Send message</a></td>
             </tr>
           </tbody>
