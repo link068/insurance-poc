@@ -40,11 +40,11 @@
 						</div>
 			 
 						<ul style="list-style-type:none;display:inline-block;float:left;">
-							<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-car" aria-hidden="true" href="newApplication"></i> Auto</a></li>
-							<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-home" aria-hidden="true" href="newApplication"></i> Home</a></li>
-							<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-ship" aria-hidden="true" href="newApplication"></i> Boat</a></li>
-							<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-truck" aria-hidden="true" href="newApplication"></i> RV/Trailer</a></li>
-							<li style="font-size:40px;float:left;padding:12px"><a href=""><i class="fa fa-search" aria-hidden="true" href="newApplication"></i> More</a></li>
+							<li style="font-size:40px;float:left;padding:12px"><a href="newApplication"><i class="fa fa-car" aria-hidden="true" ></i> Auto</a></li>
+							<li style="font-size:40px;float:left;padding:12px"><a href="newApplication"><i class="fa fa-home" aria-hidden="true" ></i> Home</a></li>
+							<li style="font-size:40px;float:left;padding:12px"><a href="newApplication"><i class="fa fa-ship" aria-hidden="true" ></i> Boat</a></li>
+							<li style="font-size:40px;float:left;padding:12px"><a href="newApplication"><i class="fa fa-truck" aria-hidden="true" ></i> RV/Trailer</a></li>
+							<li style="font-size:40px;float:left;padding:12px"><a href="newApplication"><i class="fa fa-search" aria-hidden="true" ></i> More</a></li>
 						</ul>
 						<ul style="list-style-type:none;display:inline-block;float:left;">
 							<li>&nbsp;</li>
