@@ -11,6 +11,7 @@
               <th>Application Id</th>
               <th>Assigned Employee</th>
               <th>Original Submission Date</th>
+              <th>Assigned Date</th>
               <th>Status</th>
               <th>Actions</th>
             </tr>
@@ -19,6 +20,7 @@
             <tr class="gradeA" ng-repeat="application in assignedApplications">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.assignedEmployee.name}}</td>
+            	<td>{{application.dateApplied | secondsToDateTime | date:'medium'}}</td>
             	<td>{{application.dateAssigned | secondsToDateTime | date:'medium'}}</td>
             	<td>{{application.status}}</td>
             	<td>
