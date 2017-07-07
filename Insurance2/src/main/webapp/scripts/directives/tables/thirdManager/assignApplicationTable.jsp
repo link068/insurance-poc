@@ -21,7 +21,7 @@
             	<td>{{application.status}}</td>
             	<td>
             		<!-- Button trigger modal -->
-			          <button class="btn btn-primary" data-target="#myModal" ng-click="">
+			          <button class="btn btn-primary" data-toggle="modal" data-target="#assignModal" ng-click="assignApp($index, application);">
 			          	<i class="fa fa-hand-o-left"></i> Assign
 			          </button>
 			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
@@ -61,6 +61,34 @@
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	      </div>
+	    </div> <!-- /.modal-content -->
+	  </div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+	
+	<!-- Modal -->
+	<div class="modal fade" id="assignModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">View Details</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p style="color:black;"><b>Application Id:</b> {{assignAppDetails.applicationId}}</p>
+	        <p style="color:black;">Application Id:<span class="form-control" style="width: 60%;">{{assignAppDetails.applicationId}}</span></p>
+          <p style="color:black;">Application Name:<span class="form-control" style="width: 60%;">{{assignAppDetails.name}}</span></p>
+          <p style="color:black;">Email:<span class="form-control" style="width: 60%;">{{assignAppDetails.email}}</span></p>
+          <p style="color:black;">Policy:<span class="form-control" style="width: 60%;">{{assignAppDetails.policy}}</span></p>
+        </div>
+        <form style="padding-left: 1em">
+        	<select name="selected" id="selected" ng-model="selected">
+        		<option ng-repeat="employee in employees" value={{employee.email}}>{{employee.name}}</option>
+        	</select>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-success" data-dismiss="modal" ng-click="assignNow();">Assign</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </form>
 	    </div> <!-- /.modal-content -->
 	  </div> <!-- /.modal-dialog -->
 	</div> <!-- /.modal -->

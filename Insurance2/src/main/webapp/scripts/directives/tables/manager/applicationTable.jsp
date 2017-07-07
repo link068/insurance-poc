@@ -31,10 +31,10 @@
 			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
 			          	<i class="fa fa-info"></i> View details
 			          </button>
-			          <button class="btn btn-primary" data-target="#myModal" ng-click="">
+			          <button class="btn btn-primary" data-target="#myModal" ng-click="sendThird($index, application);">
 			          	<i class="fa fa-check"></i> Send to 3rd party
 			          </button>
-			          <button class="btn btn-primary" data-target="#myModal" ng-click="">
+			          <button class="btn btn-primary" data-target="#myModal" ng-click="decline($index, application);">
 			          	<i class="fa fa-times"></i> Decline
 			          </button>
 						</tr>

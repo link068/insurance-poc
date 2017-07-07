@@ -8,7 +8,7 @@ function NewApplicationForm(name,email,mobile,address,ssn,dob,occupation,salary,
 	this.occupation=occupation;
 	this.salary=salary;
 	this.education=education;
-	this.status="new";
+	this.status="New";
 };
 
 function NewApplicationForm(applicationId,name,email,mobile,address,ssn,dob,occupation,salary,education,status,policy) {
