@@ -16,7 +16,7 @@
             </tr>
           </thead>
           <tbody>
-						<tr class="gradeA" ng-repeat="application in customerApplications | filter: {status: 'accepted'}">
+						<tr class="gradeA" ng-repeat="application in customerApplications | filter: {status: 'Finalized'}">
 							<td>{{application.applicationId}}</td>
 							<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
 							<td>{{application.policy}}</td>

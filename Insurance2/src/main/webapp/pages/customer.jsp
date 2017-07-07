@@ -44,7 +44,7 @@
 		  <div class="row" style="margin-left:20em">
 		  	<a href="newApplication"><stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats></a>
 		  	<stats class="col-centered" number={{(customerApplications|filter:'!'+{status:'accepted'}).length}} comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable=!applicationsStatusTable"></stats>
-		  	<stats class="col-centered" number={{(customerApplications|filter:{status:'accepted'}).length}} comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
+		  	<stats class="col-centered" number={{(customerApplications|filter:{status:'Finalized'}).length}} comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
 		  </div> <!-- /.row -->
 		  <div class="col-lg-12">
   		<application-status-table ng-show="applicationsStatusTable"></application-status-table>
