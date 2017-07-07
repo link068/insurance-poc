@@ -35,9 +35,9 @@ public class InsuranceSiteController {
 	public String showThirdManager(Model model){
 		return "thirdManager";
 	}
-	@RequestMapping(value="/login")
-	public String showLogin(Model model){
-		return "login";
+	@RequestMapping(value="/showLogin")
+	public String showLogin(Model model)	{
+		return "login-form";
 	}
 	@RequestMapping(value="/registration")
 	public String showRegistration(Model model){

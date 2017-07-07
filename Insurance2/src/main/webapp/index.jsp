@@ -49,7 +49,7 @@
 						<ul style="list-style-type:none;display:inline-block;float:left;">
 							<li>&nbsp;</li>
 							<li>&nbsp;</li>
-							<li><a href="login" style="color:green;font-size:30px;font-weight:bold;"> Or Login <i class="fa fa-user-circle"></i></a></li>
+							<li><a href="showLogin" style="color:green;font-size:30px;font-weight:bold;"> Or Login <i class="fa fa-user-circle"></i></a></li>
 						</ul>
 					</div>
 				</div> <!-- end of row -->
