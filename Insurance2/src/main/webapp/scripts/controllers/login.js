@@ -21,7 +21,7 @@ angular.module('sbAdminApp')
 	    
 	    $http.post(BaseRestURI+'login', data, config)
 	    .success(function (data, status, headers, config) {
-	    	alert("Success");
+	    	alert("Api call success");
 	    	console.log("data return: " + JSON.stringify(data));
 	    	if(data.role==='CUSTOMER')	{
 	    		$window.location.href = '/Insurance2/customer';

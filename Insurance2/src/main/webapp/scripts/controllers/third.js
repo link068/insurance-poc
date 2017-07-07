@@ -25,4 +25,8 @@ angular.module('sbAdminApp')
 //			});
 	  }
 	  
+	  $scope.viewDetails = function(application)	{
+			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy);
+		};
+	  
   });

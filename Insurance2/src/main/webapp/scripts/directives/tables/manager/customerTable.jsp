@@ -20,7 +20,11 @@
 							<td>{{customer.email}}</td>
 							<td>{{customer.name}}</td>
 							<td>{{customer.mobile}}</td>
-							<td><a ng-click=""><i class="fa fa-phone"></i> Contact</a></td>
+							<td>
+								<button class="btn btn-primary" data-target="#myModal" ng-click="">
+			          	<i class="fa fa-phone"></i> Contact
+			          </button>
+							</td>
 						</tr>
                </tbody>
              </table> <!-- /.table-responsive -->

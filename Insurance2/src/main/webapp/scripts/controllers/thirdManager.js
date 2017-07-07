@@ -17,7 +17,7 @@ angular.module('sbAdminApp')
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
-			var remote=$http.get(BaseRestURI+"login/thirdParty");
+			var remote=$http.get(BaseRestURI+"user/thirdParty");
 			remote.then(function(serverResponse){
 				$scope.employees=serverResponse.data;
 			},function(serverResponse){
@@ -30,5 +30,10 @@ angular.module('sbAdminApp')
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
 	  }
+	  
+	  $scope.viewDetails = function(application)	{
+			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy);
+//			$('#myModal').modal('show');
+		};
 	  
   });

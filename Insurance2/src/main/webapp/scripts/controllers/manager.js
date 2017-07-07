@@ -3,7 +3,6 @@
 angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseRestURI) {
 	  init();
 	  
-	  
 	  function init(){
 		   var remote=$http.get(BaseRestURI+"customer");
 			remote.then(function(serverResponse){
@@ -18,4 +17,9 @@ angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseR
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
 	  };
+	  
+	  $scope.viewDetails = function(application)	{
+			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy);
+//			$('#myModal').modal('show');
+		};
   });

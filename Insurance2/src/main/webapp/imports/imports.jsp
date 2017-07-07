@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>
     <!-- endbuild -->
     
     <!-- build:js(.) scripts/vendor.js -->
@@ -27,6 +29,7 @@
     <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
     <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
     <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
     <script src="bower_components/Chart.js/Chart.min.js"></script>
     <!-- endbower -->
@@ -40,6 +43,8 @@
     <script src="scripts/directives/notifications/notifications.js"></script>
     <script src="scripts/directives/dashboard/stats/stats.js"></script>
     <script src="scripts/directives/validations/confirmPass.js"></script>
+	
+
     <!-- endbuild -->
 
     <script>

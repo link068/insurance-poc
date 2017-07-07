@@ -20,8 +20,8 @@
             	<td><a ng-click=""><i class="fa fa-envelope"></i> Send message</a></td>
             </tr>
           </tbody>
-        </table>              <!-- /.table-responsive -->
-      </div>            <!-- /.panel-body -->
-    </div>         <!-- /.panel -->
-  </div>      <!-- /.col-lg-12 -->
+        </table> <!-- /.table-responsive -->
+      </div> <!-- /.panel-body -->
+    </div> <!-- /.panel -->
+  </div> <!-- /.col-lg-12 -->
 </div>
