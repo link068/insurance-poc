@@ -9,7 +9,6 @@
 angular.module('sbAdminApp')
   .controller('ThirdManagerController', function($scope,$http, BaseRestURI) {
 	  init();
-
 	  
 	  function init(){
 		  var remote=$http.get(BaseRestURI+"application/status?status=pending");

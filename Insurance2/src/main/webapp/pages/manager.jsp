@@ -35,7 +35,6 @@
 <div id="wrapper" ng-app="sbAdminApp" ng-controller="Manager">
 
 	<header></header>
-	Customer Email: <%= application.getAttribute("email1") %>
 	
   <div class="row">
 		<div class="col-lg-12">

@@ -36,10 +36,6 @@
     <!-- Navigation -->
     <header></header>
 		
-		<%-- Customer email: ${email1} --%>
-		Customer email: <%= request.getAttribute("email") %>
-		<% application.setAttribute("email1", request.getAttribute("email")); %>
-
     <div id="page-wrapper" style="min-height: 561px;">
   		<div class="row">
 	      <div class="col-lg-12">

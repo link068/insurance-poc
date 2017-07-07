@@ -4,7 +4,6 @@ package com.insurance.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
@@ -16,11 +15,7 @@ public class InsuranceSiteController {
 		return "index";
 	}
 	@RequestMapping(value="/customer")
-	public String showCustomer(@RequestParam("email") String email, Model model){
-
-		model.addAttribute("email", email);
-		System.out.println("email is " + email);
-
+	public String showCustomer(Model model){
 		return "customer";
 	}
 	@RequestMapping(value="/manager")

@@ -8,6 +8,7 @@
 		
 		<%@include file="../imports/imports.jsp" %>
 		<script type="text/javascript" src="scripts/controllers/login.js"></script>
+		<script src="scripts/model/User.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,13 @@
                 <h3 class="panel-title">Please Sign In</h3>
             </div>
             <div class="panel-body">
-              <form role="form" action="login" method="post">
+              <form role="form">
                 <fieldset>
                   <div class="form-group">
-                      <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                      <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus ng-model="email">
                   </div>
                   <div class="form-group">
-                      <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                      <input class="form-control" placeholder="Password" name="password" type="password" ng-model="password">
                   </div>
                   <div class="checkbox">
                       <label>
@@ -41,7 +42,8 @@
 											</ul>
                   </div>
                   <!-- Change this to a button or input when using this as a form -->
-                  <button type="submit" class="btn btn-lg btn-success btn-block">Login for real</button>
+                  <button type="submit" class="btn btn-lg btn-success btn-block" ng-click="authUser();">Login</button>
+                  <span style="color: red;font-size: 14px;">{{applicationMessage}}</span>
                 </fieldset>
               </form>
             </div>
