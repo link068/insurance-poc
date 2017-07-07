@@ -42,9 +42,9 @@
 	    </div>
 	  </div>
 	  <div class="row" style="margin-left:20em">
-	  	<stats class="col-centered" number={{(applications|filter:{status:'new'}).length}} comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
-	  	<stats class="col-centered" number={{(applications|filter:{status:'pending'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
-	  	<stats class="col-centered" number={{(applications|filter:{status:'finalized'}).length}} comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Pending'}).length}} comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Working'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Finalized'}).length}} comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
 	  </div>
 	  <div class="col-lg-12">
 	  <!-- /.row -->

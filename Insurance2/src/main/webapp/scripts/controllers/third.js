@@ -39,6 +39,21 @@ angular.module('sbAdminApp')
 					  alert("problem occurred sending email");
 				  }
 		  );
+		  var remote=$http.put(BaseRestURI+"application/status?id="+ applicationId +"&status=Working");
+			remote.then(function(serverResponse){
+				init();
+			},function(serverResponse){
+				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			});
+	  };
+	  
+	  $scope.finalizeApp = function(application) {
+		  var remote=$http.put(BaseRestURI+"application/status?id="+ application.applicationId +"&status=Finalized");
+			remote.then(function(serverResponse){
+				init();
+			},function(serverResponse){
+				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			});
 	  }
 	  
   });

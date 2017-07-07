@@ -15,16 +15,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'new'}">
+            <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'Pending'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
             	<td>
             		<!-- Button trigger modal -->
-          <button class="btn btn-primary" data-target="#myModal" ng-click="">
-          	<i class="fa fa-folder-open"></i> Review
-          </button>
           <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
           	<i class="fa fa-info"></i> View details
+          </button>
+          <button class="btn btn-primary" ng-click="sendEmail(application.applicationId,application.email);">
+          	<i class="fa fa-pencil"></i> Send Email
           </button>
             	</td>
             </tr>

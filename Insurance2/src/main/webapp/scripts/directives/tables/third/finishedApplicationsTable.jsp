@@ -15,14 +15,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="gradeA" ng-repeat="application in applications | filter: {status:'finalized'}">
+            <tr class="gradeA" ng-repeat="application in applications | filter: {status:'Finalized'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied | secondsToDateTime | date:'medium'}}</td>
             	<td>
-            		<!-- Button trigger modal -->
-			          <button class="btn btn-primary" data-target="#myModal3" ng-click="">
-			          	<i class="fa fa-check-square-o"></i> Notify manager
-			          </button>
 			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3" ng-click="viewDetails(application);">
 			          	<i class="fa fa-info"></i> View details
 			          </button>
