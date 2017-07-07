@@ -17,7 +17,7 @@ angular.module('sbAdminApp')
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
-			var remote=$http.get(BaseRestURI+"login/thirdParty");
+			var remote=$http.get(BaseRestURI+"user/thirdParty");
 			remote.then(function(serverResponse){
 				$scope.employees=serverResponse.data;
 			},function(serverResponse){
