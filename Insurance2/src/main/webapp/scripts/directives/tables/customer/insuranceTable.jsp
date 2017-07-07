@@ -23,7 +23,7 @@
 							<td>{{application.status}}</td>
 							<td>
 								<!-- Button trigger modal -->
-			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
+			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2" ng-click="viewDetails(application);">
 			          	<i class="fa fa-info"></i> View details
 			          </button>
 							</td>
@@ -34,7 +34,7 @@
     </div> <!-- /.panel -->
   </div> <!-- /.col-lg-12 -->
   <!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">

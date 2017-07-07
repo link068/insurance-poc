@@ -19,6 +19,7 @@
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/assignApplicationTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/employeeTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/timedOutApplications.js"></script>
+		<script src="scripts/model/NewApplicationForm.js"></script>
 		
 		<style type="text/css">
 		.col-centered {
@@ -44,7 +45,7 @@
   </div>
   <div class="row" style="margin-left:20em">
   	<stats class="col-centered" number={{newApplications.length}} comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
-  	<stats class="col-centered" number={{assignedApplications.length}} comments="Assigned Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
+  	<stats class="col-centered" number={{assignedApplications.length}} comments="Timed-out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
   	<stats class="col-centered" number="2" comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
   </div>
   <div class="col-lg-12">
