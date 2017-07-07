@@ -12,9 +12,7 @@
                <th>Application ID</th>
                <th>Customer ID</th>
                <th>Customer name</th>
-               <th>Application Status</th>
                <th>Date Applied</th>
-               <th>Assigned Agent</th>
                <th>Actions</th>
              </tr>
            </thead>
@@ -23,9 +21,7 @@
 							<td>{{application.applicationId}}</td>
 							<td>{{application.email}}</td>
 							<td>{{application.name}}</td>
-							<td>{{application.status}}</td>
 							<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
-							<td>{{application.assignedEmployee}}</td>
 							<td class="center">
 								<!-- Button trigger modal -->
 			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
