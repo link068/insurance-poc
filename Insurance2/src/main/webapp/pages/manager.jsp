@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="scripts/directives/tables/manager/customerTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/manager/workingApplicationsTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/manager/finishedApplicationsTable.js"></script>
-	<script type="text/javascript" src="scripts/model/NewApplicationForm.js"></script>
+	<script type="text/javascript" src="scripts/model/ApplicationView.js"></script>
 	<style type="text/css">
 	.col-centered {
     display:inline-block;
