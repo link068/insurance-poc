@@ -81,7 +81,7 @@
           <p style="color:black;">Email:<span class="form-control" style="width: 60%;">{{assignAppDetails.email}}</span></p>
           <p style="color:black;">Policy:<span class="form-control" style="width: 60%;">{{assignAppDetails.policy}}</span></p>
         </div>
-        <form style="padding-left: 1em">
+        <form style="padding-left: 1em"><b>Employee:</b></br>
         	<select name="selected" id="selected" ng-model="selected">
         		<option ng-repeat="employee in employees" value={{employee.email}}>{{employee.name}}</option>
         	</select>
