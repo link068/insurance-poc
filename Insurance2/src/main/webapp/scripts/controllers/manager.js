@@ -10,7 +10,7 @@ angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseR
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
-			var remote=$http.get(BaseRestURI+"application/status?status=New");
+			var remote=$http.get(BaseRestURI+"application");
 			remote.then(function(serverResponse){
 				$scope.applications=serverResponse.data;
 			},function(serverResponse){

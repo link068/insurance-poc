@@ -18,8 +18,9 @@
 	<script type="text/javascript" src="scripts/controllers/manager.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/manager/applicationTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/manager/customerTable.js"></script>
-	<script src="scripts/model/NewApplicationForm.js"></script>
-	
+	<script type="text/javascript" src="scripts/directives/tables/manager/workingApplicationsTable.js"></script>
+	<script type="text/javascript" src="scripts/directives/tables/manager/finishedApplicationsTable.js"></script>
+	<script type="text/javascript" src="scripts/model/NewApplicationForm.js"></script>
 	<style type="text/css">
 	.col-centered {
     display:inline-block;
@@ -44,13 +45,17 @@
   </div>
   
 	<div class="row" style="text-align:center;">
-   	<stats class="col-centered" number={{applications.length}} comments="View Applications" colour="yellow" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
-   	<stats class="col-centered" number={{customers.length}} comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats>
+   	<stats class="col-centered" number={{(applications|filter:{status:'New'}).length}} comments="View New Applications" colour="primary" type="file-text" ng-click="applicationsTable = !applicationsTable"></stats>
+<!--    	<stats class="col-centered" number={{customers.length}} comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats> -->
+  	<stats class="col-centered" number={{(applications|filter:{status:'!New'}|filter:{status:'!Finalized'}|filter:{status:'!Declined'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Finalized'}).length}} comments="Finished Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
   </div>
   
   <div class="col-lg-12">
   	<application-table ng-show="applicationsTable"></application-table>
-  	<customer-table ng-show="customersTable"></customer-table>
+  	<working-applications-table ng-show="pending"></working-applications-table>
+  	<finished-applications-table ng-show="finished"></finished-applications-table>
+<!--   	<customer-table ng-show="customersTable"></customer-table> -->
  	</div>
 </div>	<!-- wrapper -->
 

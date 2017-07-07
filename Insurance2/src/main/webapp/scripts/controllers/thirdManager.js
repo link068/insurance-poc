@@ -31,6 +31,12 @@ angular.module('sbAdminApp')
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
+			var remote=$http.get(BaseRestURI+"application");
+			remote.then(function(serverResponse){
+				$scope.applications=serverResponse.data;
+			},function(serverResponse){
+				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			});
 	  }
 	  
 	  $scope.viewDetails = function(application)	{

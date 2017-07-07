@@ -1,47 +1,36 @@
 <div class="row">
-	<div class="col-lg-12">
+  <div class="col-lg-12">
     <div class="panel panel-default">
-       <div class="panel-heading">
-           List of Applications
-       </div>
-       <!-- /.panel-heading -->
-       <div class="panel-body">
-         <table width="100%" class="table table-striped table-bordered table-hover" id="example">
-           <thead>
-             <tr>
-               <th>Application ID</th>
-               <th>Customer ID</th>
-               <th>Customer name</th>
-               <th>Date Applied</th>
-               <th>Actions</th>
-             </tr>
-           </thead>
-           <tbody>
-            <tr class="gradeA" ng-repeat="application in applications | filter: {status: 'new'}">
-							<td>{{application.applicationId}}</td>
-							<td>{{application.email}}</td>
-							<td>{{application.name}}</td>
-							<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
-							<td class="center">
-								<!-- Button trigger modal -->
-			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
+      <div class="panel-heading">
+        List of Finished Applications
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <table width="100%" class="table table-striped table-bordered table-hover" id="example">
+          <thead>
+            <tr>
+              <th>Application Id</th>
+              <th>Date Applied</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="gradeA" ng-repeat="application in applications | filter: {status:'Finalized'}">
+            	<td>{{application.applicationId}}</td>
+            	<td>{{application.dateApplied | secondsToDateTime | date:'medium'}}</td>
+            	<td>
+			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3" ng-click="viewDetails(application);">
 			          	<i class="fa fa-info"></i> View details
 			          </button>
-			          <button class="btn btn-primary" data-target="#myModal" ng-click="sendThird($index, application);">
-			          	<i class="fa fa-check"></i> Send to 3rd party
-			          </button>
-			          <button class="btn btn-primary" data-target="#myModal" ng-click="decline($index, application);">
-			          	<i class="fa fa-times"></i> Decline
-			          </button>
-						</tr>
+            	</td>
+            </tr>
           </tbody>
-        </table> <!-- /.table-responsive -->
-      </div>  <!-- /.panel-body -->
-    </div> <!-- /.panel -->
-  </div> <!-- /.col-lg-12 -->
-  
+        </table>              <!-- /.table-responsive -->
+      </div>            <!-- /.panel-body -->
+    </div>         <!-- /.panel -->
+  </div>      <!-- /.col-lg-12 -->
   <!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -69,6 +58,4 @@
 	    </div> <!-- /.modal-content -->
 	  </div> <!-- /.modal-dialog -->
 	</div> <!-- /.modal -->
-    
-  
-</div> 
+</div>
