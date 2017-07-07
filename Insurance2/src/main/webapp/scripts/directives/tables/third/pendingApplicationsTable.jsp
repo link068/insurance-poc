@@ -21,6 +21,7 @@
                   	<td>
                   		<a ng-click=""><i class="fa fa-info"></i> View details</a>
                   		<a ng-click=""><i class="fa fa-pencil-square-o"> Finalize</i></a>
+                  		<a ng-click="sendEmail(application.applicationId,application.email);"><i class="fa fa-pencil">send email</i></a>
                   	</td>
                   </tr>
                 </tbody>

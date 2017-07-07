@@ -25,4 +25,16 @@ angular.module('sbAdminApp')
 //			});
 	  }
 	  
+	  $scope.sendEmail = function(applicationId,email) {
+		  var data = {applicationId: applicationId,email: email};
+		  $http.post(BaseRestURI + "/email",data).then(
+				  function(serverResponse) {
+					  
+				  },
+				  function(serverResponse) {
+					  alert("problem occurred sending email");
+				  }
+		  );
+	  }
+	  
   });
