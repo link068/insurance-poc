@@ -8,6 +8,13 @@
  */
 angular.module('sbAdminApp')
   .controller('ThirdController', function($scope,$http, BaseRestURI) {
+  	
+  	// Get saved data from sessionStorage
+  	var email = sessionStorage.getItem('email');
+  	var name = sessionStorage.getItem('name');
+  	$scope.currentUser = name;
+  	console.log("third email: " + email);
+  	
 	  init();
 	  
 	  function init(){

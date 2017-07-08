@@ -8,11 +8,17 @@
  */
 angular.module('sbAdminApp')
   .controller('CustomerController', function($scope,$http, BaseRestURI) {
+  	
+  	// Get saved data from sessionStorage
+  	var email = sessionStorage.getItem('email');
+  	var name = sessionStorage.getItem('name');
+  	$scope.currentUser = name;
+  	
 	  init();
 	  
 	  function init(){
-		  
-			var remote=$http.get(BaseRestURI+"application/email?email=carlosp@gmail.com");
+//			var remote=$http.get(BaseRestURI+"application/email?email=carlosp@gmail.com");
+			var remote=$http.get(BaseRestURI+"application/email?email="+email);
 			remote.then(function(serverResponse){
 				$scope.customerApplications=serverResponse.data;
 			},function(serverResponse){

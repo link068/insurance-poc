@@ -22,6 +22,11 @@ angular.module('sbAdminApp')
 	    $http.post(BaseRestURI+'login', data, config)
 	    .success(function (data, status, headers, config) {
 	    	console.log("data return: " + JSON.stringify(data));
+	    	
+	    	// Save data to sessionStorage
+	    	sessionStorage.setItem('email', data.email);
+	    	sessionStorage.setItem('name', data.name);
+	    	
 	    	if(data.role==='CUSTOMER')	{
 	    		$window.location.href = '/Insurance2/customer';
 	    	} else if(data.role==='MANAGER')	{

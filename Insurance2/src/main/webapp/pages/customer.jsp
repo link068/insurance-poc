@@ -33,6 +33,8 @@
 	<div id="wrapper" ng-app="sbAdminApp" ng-controller="CustomerController">
     <!-- Navigation -->
     <header></header>
+    
+    <h2 style="color:blue">Welcome, {{currentUser}}</h2>
 		
     <div id="page-wrapper" style="min-height: 561px;">
   		<div class="row">

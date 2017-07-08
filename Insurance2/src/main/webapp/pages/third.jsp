@@ -35,6 +35,7 @@
 	<div id="wrapper" ng-app="sbAdminApp" ng-controller="ThirdController">
 	
 		<header></header>
+		<h2 style="color:orange">Welcome, {{currentUser}}</h2>
 		
 	  <div class="row">
 	    <div class="col-lg-12">
