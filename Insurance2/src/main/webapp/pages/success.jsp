@@ -5,6 +5,6 @@
 </head>
 <body>
    FileName : 
-   <b> ${fileName} </b> - Uploaded Successfully.
+   <b> <%=request.getAttribute("fileName")%> </b> - Uploaded Successfully.
 </body>
 </html>
