@@ -44,8 +44,9 @@ public class FileUploadController {
          System.out.println("Fetching file");
          MultipartFile multipartFile = file.getFile();
          System.out.println(file.getFileId());
-        // String uploadPath = context.getRealPath("") + File.separator + "temp" + File.separator;
-         String uploadPath= "/Users/peace/Documents/test/"+file.getFileId()+"/";
+         //Need to change your path here!!!!!!!!!!
+         new File("/Users/peace/Desktop/POC/insurance-poc/Insurance2/src/main/webapp/document/"+file.getFileId()+"/").mkdir();
+         String uploadPath = "/Users/peace/Desktop/POC/insurance-poc/Insurance2/src/main/webapp/document/"+file.getFileId()+"/";
          System.out.println(uploadPath);
          //Now do something with file...
          FileCopyUtils.copy(file.getFile().getBytes(), new File(uploadPath+file.getFile().getOriginalFilename()));
