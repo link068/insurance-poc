@@ -42,5 +42,5 @@ public class InsuranceSiteController {
 	public String showNewApplication(Model model){
 		return "newApplication";
 	}
-
+	
 }
