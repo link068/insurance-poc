@@ -65,12 +65,22 @@
                   <span style="color:red" ng-show="myForm.education.$dirty && myForm.education.$invalid">
 									<span ng-show="myForm.education.$error.required">Education is Required.</span></span>
 									<input class="form-control" placeholder="Education" name="education" type="text" ng-model="education" required>
+				  <label>Policy</label>
+                  <span style="color:red" ng-show="myForm.policy.$dirty && myForm.policy.$invalid">
+									<span ng-show="myForm.policy.$error.required">Policy is Required.</span></span>
+				  <select ng-model="policy" name="policy" required>
+						<option value="Home">Home</option>
+						<option value="Boat">Boat</option>
+						<option value="Car">Car</option>
+						<option value="Life">Life</option>
+						<option value="Health">Health</option>
+				  </select>
                 </div> <!-- ./form-group -->
                 
                 <input type="submit" class="btn btn-lg btn-success btn-block" value="Submit" ng-click="submitInfo()" ng-disabled="myForm.email.$dirty && myForm.email.$invalid 
                 || myForm.name.$dirty && myForm.name.$invalid || myForm.ssn.$dirty && myForm.ssn.$invalid || myForm.salary.$dirty && myForm.salary.$invalid
                 || myForm.address.$dirty && myForm.address.$invalid || myForm.dob.$dirty && myForm.dob.$invalid || myForm.occupation.$dirty && myForm.occupation.$invalid
-                || myForm.education.$dirty && myForm.education.$invalid ||  myForm.mobile.$dirty && myForm.mobile.$invalid" > 
+                || myForm.education.$dirty && myForm.education.$invalid ||  myForm.mobile.$dirty && myForm.mobile.$invalid || myForm.policy.$dirty && myForm.policy.$invalid"> 
                 </fieldset>
               </form>
             </div> <!-- ./panel-body -->

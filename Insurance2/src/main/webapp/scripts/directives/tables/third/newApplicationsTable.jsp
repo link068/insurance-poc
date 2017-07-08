@@ -15,16 +15,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'new'}">
+            <tr class="gradeA" ng-repeat="application in applications  | filter: {status:'Pending'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
             	<td>
             		<!-- Button trigger modal -->
-          <button class="btn btn-primary" data-target="#myModal" ng-click="">
-          	<i class="fa fa-folder-open"></i> Review
-          </button>
           <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="viewDetails(application);">
           	<i class="fa fa-info"></i> View details
+          </button>
+          <button class="btn btn-primary" ng-click="sendEmail(application.applicationId,application.email);">
+          	<i class="fa fa-pencil"></i> Send Email
           </button>
             	</td>
             </tr>
@@ -43,19 +43,18 @@
 	        <h4 class="modal-title" id="myModalLabel">View Details</h4>
 	      </div>
 	      <div class="modal-body">
-	        <p style="color:black;"><b>Application Id:</b> {{details.applicationId}}</p>
-	        <p style="color:black;">Application Id:<span class="form-control" style="width: 60%;">{{details.applicationId}}</span></p>
-          <p style="color:black;">Application Name:<span class="form-control" style="width: 60%;">{{details.name}}</span></p>
-          <p style="color:black;">Email:<span class="form-control" style="width: 60%;">{{details.email}}</span></p>
-          <p style="color:black;">Mobile:<span class="form-control" style="width: 60%;">{{details.mobile}}</span></p>
-          <p style="color:black;">Address:<span class="form-control" style="width: 60%;">{{details.address}}</span></p>
-          <p style="color:black;">Ssn:<span class="form-control" style="width: 60%;">{{details.ssn}}</span></p>
-          <p style="color:black;">Dob:<span class="form-control" style="width: 60%;">{{details.dob}}</span></p>
-          <p style="color:black;">Occupation:<span class="form-control" style="width: 60%;">{{details.occupation}}</span></p>
-          <p style="color:black;">Salary:<span class="form-control" style="width: 60%;">{{details.salary}}</span></p>
-          <p style="color:black;">Education:<span class="form-control" style="width: 60%;">{{details.education}}</span></p>
-          <p style="color:black;">Status:<span class="form-control" style="width: 60%;">{{details.status}}</span></p>
-          <p style="color:black;">Policy:<span class="form-control" style="width: 60%;">{{details.policy}}</span></p>
+	        <p style="color:black;"><b>Application Id</b><span class="form-control" style="width: 60%;">{{details.applicationId}}</span></p>
+          <p style="color:black;"><b>Application Name</b><span class="form-control" style="width: 60%;">{{details.name}}</span></p>
+          <p style="color:black;"><b>Email</b><span class="form-control" style="width: 60%;">{{details.email}}</span></p>
+          <p style="color:black;"><b>Mobile</b><span class="form-control" style="width: 60%;">{{details.mobile}}</span></p>
+          <p style="color:black;"><b>Address</b><span class="form-control" style="width: 60%;">{{details.address}}</span></p>
+          <p style="color:black;"><b>Ssn</b><span class="form-control" style="width: 60%;">{{details.ssn}}</span></p>
+          <p style="color:black;"><b>Dob</b><span class="form-control" style="width: 60%;">{{details.dob}}</span></p>
+          <p style="color:black;"><b>Occupation</b><span class="form-control" style="width: 60%;">{{details.occupation}}</span></p>
+          <p style="color:black;"><b>Salary</b><span class="form-control" style="width: 60%;">{{details.salary}}</span></p>
+          <p style="color:black;"><b>Education</b><span class="form-control" style="width: 60%;">{{details.education}}</span></p>
+          <p style="color:black;"><b>Status</b><span class="form-control" style="width: 60%;">{{details.status}}</span></p>
+          <p style="color:black;"><b>Policy</b><span class="form-control" style="width: 60%;">{{details.policy}}</span></p>
         </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

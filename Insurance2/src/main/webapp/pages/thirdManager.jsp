@@ -19,7 +19,8 @@
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/assignApplicationTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/employeeTable.js"></script>
 		<script type="text/javascript" src="scripts/directives/tables/thirdManager/timedOutApplications.js"></script>
-		<script src="scripts/model/NewApplicationForm.js"></script>
+		<script type="text/javascript" src="scripts/directives/tables/thirdManager/workingApplicationsTable.js"></script>
+		<script src="scripts/model/ApplicationView.js"></script>
 		
 		<style type="text/css">
 		.col-centered {
@@ -43,15 +44,17 @@
       <h1 class="page-header" style="text-align:center">Third Party Manager Dashboard</h1>
     </div>
   </div>
-  <div class="row" style="margin-left:20em">
+  <div class="row" >
   	<stats class="col-centered" number={{newApplications.length}} comments="Assign Applications" colour="red" type="file-text" ng-click="assignTable = !assignTable"></stats>
-  	<stats class="col-centered" number={{assignedApplications.length}} comments="Timed-out Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
-  	<stats class="col-centered" number="2" comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
+  	<stats class="col-centered" number={{assignedApplications.length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="timedTable = !timedTable"></stats>
+  	<stats class="col-centered" number={{(applications|filter:{status:'!New'}|filter:{status:'!Declined'}).length}} comments="All Applications" colour="yellow" type="folder-open" ng-click="working = !working"></stats>
+  	<stats class="col-centered" number={{employees.length}} comments="View Employees" colour="green" type="users" ng-click="employeeTable = !employeeTable"></stats>
   </div>
   <div class="col-lg-12">
   <!-- /.row -->
   	<assign-application-table ng-show="assignTable"></assign-application-table>
   	<timed-out-applications ng-show="timedTable"></timed-out-applications>
+  	<working-applications-table ng-show="working"></working-applications-table>
   	<employee-table ng-show="employeeTable"></employee-table>
   <!-- /.row -->
   </div>

@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="scripts/directives/tables/third/newApplicationsTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/third/pendingApplicationsTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/third/finishedApplicationsTable.js"></script>
-	<script src="scripts/model/NewApplicationForm.js"></script>
+	<script src="scripts/model/ApplicationView.js"></script>
 
 	<style type="text/css">
 		.col-centered {
@@ -35,6 +35,7 @@
 	<div id="wrapper" ng-app="sbAdminApp" ng-controller="ThirdController">
 	
 		<header></header>
+		<h2 style="color:orange">Welcome, {{currentUser}}</h2>
 		
 	  <div class="row">
 	    <div class="col-lg-12">
@@ -42,9 +43,9 @@
 	    </div>
 	  </div>
 	  <div class="row" style="margin-left:20em">
-	  	<stats class="col-centered" number={{(applications|filter:{status:'new'}).length}} comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
-	  	<stats class="col-centered" number={{(applications|filter:{status:'pending'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
-	  	<stats class="col-centered" number={{(applications|filter:{status:'finalized'}).length}} comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Pending'}).length}} comments="New Applications" colour="red" type="file-text" ng-click="new = !new"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Working'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
+	  	<stats class="col-centered" number={{(applications|filter:{status:'Finalized'}).length}} comments="Finalized Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
 	  </div>
 	  <div class="col-lg-12">
 	  <!-- /.row -->

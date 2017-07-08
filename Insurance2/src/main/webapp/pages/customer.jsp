@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="scripts/controllers/customer.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/applicationStatusTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/insuranceTable.js"></script>
-	<script src="scripts/model/NewApplicationForm.js"></script>
+	<script src="scripts/model/ApplicationView.js"></script>
 	
 	<style type="text/css">
 		.col-centered {
@@ -33,6 +33,8 @@
 	<div id="wrapper" ng-app="sbAdminApp" ng-controller="CustomerController">
     <!-- Navigation -->
     <header></header>
+    
+    <h2 style="color:blue">Welcome, {{currentUser}}</h2>
 		
     <div id="page-wrapper" style="min-height: 561px;">
   		<div class="row">
@@ -44,7 +46,7 @@
 		  <div class="row" style="margin-left:20em">
 		  	<a href="newApplication"><stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats></a>
 		  	<stats class="col-centered" number={{(customerApplications|filter:'!'+{status:'accepted'}).length}} comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable=!applicationsStatusTable"></stats>
-		  	<stats class="col-centered" number={{(customerApplications|filter:{status:'accepted'}).length}} comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
+		  	<stats class="col-centered" number={{(customerApplications|filter:{status:'Finalized'}).length}} comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
 		  </div> <!-- /.row -->
 		  <div class="col-lg-12">
   		<application-status-table ng-show="applicationsStatusTable"></application-status-table>
