@@ -1,4 +1,4 @@
-function NewApplicationForm(applicationId,name,email,mobile,address,ssn,dob,occupation,salary,education,status, policy) {
+function NewApplicationForm(applicationId,name,email,mobile,address,ssn,dob,occupation,salary,education,status, policy, assignedEmployee) {
 	this.applicationId=applicationId;
 	this.name=name;
 	this.email=email;
@@ -11,4 +11,5 @@ function NewApplicationForm(applicationId,name,email,mobile,address,ssn,dob,occu
 	this.education=education;
 	this.status=status;
 	this.policy=policy;
+	this.assignedEmployee=assignedEmployee;
 };

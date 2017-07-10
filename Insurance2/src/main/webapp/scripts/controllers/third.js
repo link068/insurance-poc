@@ -18,22 +18,22 @@ angular.module('sbAdminApp')
 	  init();
 	  
 	  function init(){
-		  var remote=$http.get(BaseRestURI+"/application");
+//		  var remote=$http.get(BaseRestURI+"/application");
+//			remote.then(function(serverResponse){
+//				$scope.applications=serverResponse.data;
+//			},function(serverResponse){
+//				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//			});
+			var remote=$http.get(BaseRestURI+"application/getApplicationByEmployee?email="+email);
 			remote.then(function(serverResponse){
 				$scope.applications=serverResponse.data;
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 			});
-//			var remote=$http.get(BaseURI+"/application/email" + $rootScope.login.email);
-//			remote.then(function(serverResponse){
-//				$scope.employeeApplications=serverResponse.data;
-//			},function(serverResponse){
-//				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-//			});
 	  }
 	  
 	  $scope.viewDetails = function(application)	{
-			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy);
+			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy, application.assignedEmployee);
 		};
 	  
 	  $scope.sendEmail = function(applicationId,email) {
@@ -56,6 +56,15 @@ angular.module('sbAdminApp')
 	  
 	  $scope.finalizeApp = function(application) {
 		  var remote=$http.put(BaseRestURI+"application/status?id="+ application.applicationId +"&status=Finalized");
+			remote.then(function(serverResponse){
+				init();
+			},function(serverResponse){
+				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			});
+	  }
+	  
+	  $scope.updateApp = function(application) {
+		  var remote=$http.post(BaseRestURI+"application", $scope.details);
 			remote.then(function(serverResponse){
 				init();
 			},function(serverResponse){
