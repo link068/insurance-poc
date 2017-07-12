@@ -42,7 +42,6 @@
                     <th>Application Id</th>
                     <th>Date Applied</th>
                     <th>Status</th>
-                    <th>Document</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
@@ -51,7 +50,6 @@
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
                   	<td>{{application.status}}</td>
-                  	<td></td>
                   	<td>
                   		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2" ng-click="viewDetails(application);">
           					<i class="fa fa-info"></i> View details

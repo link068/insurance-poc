@@ -32,5 +32,6 @@
 	<mvc:resources location="/styles/" mapping="/styles/**" />
 	<mvc:resources location="/js/" mapping="/js/**" />
 	<mvc:resources location="/pages/" mapping="/pages/**" />
+	<mvc:resources location="/document/" mapping="/document/**" />
 	
 </beans>

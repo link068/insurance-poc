@@ -51,7 +51,7 @@
                   <tr class="gradeA" ng-repeat="application in applications | filter: {status: 'Working'}">
                   	<td>{{application.applicationId}}</td>
                   	<td>{{application.dateApplied  | secondsToDateTime | date:'medium'}}</td>
-                  	<td></td>
+                  	<td><a href="http://localhost:8080/insurance-bank/webapi/photo?id={{application.applicationId}}"><img src="http://localhost:8080/insurance-bank/webapi/photo?id={{application.applicationId}}" height="50px"></a></td>
                   	<td>
                   		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2" ng-click="viewDetails(application);">
           					<i class="fa fa-info"></i> View details

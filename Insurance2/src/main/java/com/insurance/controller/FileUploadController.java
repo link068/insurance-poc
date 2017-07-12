@@ -8,7 +8,6 @@ import javax.servlet.ServletContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -45,8 +44,8 @@ public class FileUploadController {
          MultipartFile multipartFile = file.getFile();
          System.out.println(file.getFileId());
          //Need to change your path here!!!!!!!!!!
-         new File("/Users/peace/Desktop/POC/insurance-poc/Insurance2/src/main/webapp/document/"+file.getFileId()+"/").mkdir();
-         String uploadPath = "/Users/peace/Desktop/POC/insurance-poc/Insurance2/src/main/webapp/document/"+file.getFileId()+"/";
+         new File("C:/Users/Carlos/git/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/").mkdir();
+         String uploadPath = "C:/Users/Carlos/git/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/";
          System.out.println(uploadPath);
          //Now do something with file...
          FileCopyUtils.copy(file.getFile().getBytes(), new File(uploadPath+file.getFile().getOriginalFilename()));
