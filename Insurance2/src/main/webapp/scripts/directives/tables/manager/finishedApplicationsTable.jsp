@@ -19,7 +19,7 @@
             <tr class="gradeA" ng-repeat="application in applications | filter: {status:'Finalized'}">
             	<td>{{application.applicationId}}</td>
             	<td>{{application.dateApplied | secondsToDateTime | date:'medium'}}</td>
-            	<td><a href="http://localhost:8080/insurance-bank/webapi/photo?id={{application.applicationId}}"><img src="http://localhost:8080/insurance-bank/webapi/photo?id={{application.applicationId}}" height="50px"></a></td>
+            	<td><button data-toggle="modal" data-target="#myModal7" ng-click="viewDetails(application);"><img src="http://localhost:8080/insurance-bank/webapi/photo?id={{application.applicationId}}" height="50px"></button></td>
             	<td>
 			          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3" ng-click="viewDetails(application);">
 			          	<i class="fa fa-info"></i> View details
@@ -59,4 +59,22 @@
 	    </div> <!-- /.modal-content -->
 	  </div> <!-- /.modal-dialog -->
 	</div> <!-- /.modal -->
-</div>
+
+
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">View Details</h4>
+	      </div>
+	      <div class="modal-body">
+	        <img src="http://localhost:8080/insurance-bank/webapi/photo?id={{details.applicationId}}">
+        </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div> <!-- /.modal-content -->
+	  </div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+	</div>
