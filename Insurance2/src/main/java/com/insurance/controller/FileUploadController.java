@@ -44,8 +44,8 @@ public class FileUploadController {
          MultipartFile multipartFile = file.getFile();
          System.out.println(file.getFileId());
          //Need to change your path here!!!!!!!!!!
-         new File("C:/Users/Carlos/git/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/").mkdir();
-         String uploadPath = "C:/Users/Carlos/git/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/";
+         new File("/Users/peace/Desktop/POC/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/").mkdir();
+         String uploadPath = "/Users/peace/Desktop/POC/insurance-master/insurance-bank/src/main/webapp/document/"+file.getFileId()+"/";
          System.out.println(uploadPath);
          //Now do something with file...
          FileCopyUtils.copy(file.getFile().getBytes(), new File(uploadPath+file.getFile().getOriginalFilename()));
