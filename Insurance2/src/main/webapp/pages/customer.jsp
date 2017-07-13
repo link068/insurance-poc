@@ -12,10 +12,13 @@
 			$('#example').DataTable();
 		} );
 	</script>
+	<script src="scripts/model/NewApplicationForm.js"></script>
+	<script src="scripts/factory/NewApplicationFactory.js"></script>
 	<script type="text/javascript" src="scripts/controllers/customer.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/applicationStatusTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/customer/insuranceTable.js"></script>
 	<script src="scripts/model/ApplicationView.js"></script>
+	<script src="scripts/directives/applications/application.js"></script>
 	
 	<style type="text/css">
 		.col-centered {
@@ -44,11 +47,12 @@
       	<!-- /.col-lg-12 -->
   		</div>
 		  <div class="row" style="margin-left:20em">
-		  	<a href="newApplication"><stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil"></stats></a>
+		  	<stats class="col-centered" number="1" comments="Apply For Insurance" colour="green" type="pencil" data-toggle="modal" data-target="#myModal7"></stats></a>
 		  	<stats class="col-centered" number={{(customerApplications|filter:'!'+{status:'accepted'}).length}} comments="Application Status" colour="yellow" type="check" ng-click="applicationsStatusTable=!applicationsStatusTable"></stats>
 		  	<stats class="col-centered" number={{(customerApplications|filter:{status:'Finalized'}).length}} comments="View Insurance" colour="primary" type="file-text" ng-click="insurancesTable=!insurancesTable"></stats>
 		  </div> <!-- /.row -->
 		  <div class="col-lg-12">
+		<application></application>
   		<application-status-table ng-show="applicationsStatusTable"></application-status-table>
   		<insurance-table ng-show="insurancesTable"></insurance-table>
   		</div>
