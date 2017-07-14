@@ -17,7 +17,6 @@ angular.module('sbAdminApp')
 	  init();
 	  
 	  function init(){
-//			var remote=$http.get(BaseRestURI+"application/email?email=carlosp@gmail.com");
 			var remote=$http.get(BaseRestURI+"application/email?email="+email);
 			remote.then(function(serverResponse){
 				$scope.customerApplications=serverResponse.data;
@@ -28,7 +27,7 @@ angular.module('sbAdminApp')
 	  
 	  $scope.viewDetails = function(application)	{
 			$scope.details = new NewApplicationForm(application.applicationId,application.name,application.email,application.mobile,application.address,application.ssn,application.dob,application.occupation,application.salary,application.education,application.status,application.policy);
-//			$('#myModal').modal('show');
+
 		};
 		$scope.submitInfo = function(){ 
 			  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
