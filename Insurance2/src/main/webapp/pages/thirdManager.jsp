@@ -39,6 +39,8 @@
 
 	<header></header>
 	
+	<h2 style="color:blue">Welcome, {{currentUser}}</h2>
+	
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header" style="text-align:center">Third Party Manager Dashboard</h1>

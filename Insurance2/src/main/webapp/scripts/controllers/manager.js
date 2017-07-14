@@ -1,6 +1,12 @@
 'use strict';
 
 angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseRestURI) {
+	
+		//Get saved data from sessionStorage
+		var email = sessionStorage.getItem('email');
+		var name = sessionStorage.getItem('name');
+		$scope.currentUser = name;
+		
 	  init();
 	  
 	  function init(){
