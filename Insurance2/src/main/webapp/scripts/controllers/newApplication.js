@@ -15,7 +15,7 @@ angular.module('sbAdminApp')
   	
 	  $scope.submitInfo = function(){ 
 		  console.log("####!!!!!######$$$$$$$$$$$$$ =! ");
-		  var regData = new NewApplicationForm($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education, $scope.policy);
+		  var regData = new NewApplicationFormNew($scope.name,$scope.email,$scope.mobile,$scope.address,$scope.ssn,$scope.dob,$scope.occupation,$scope.salary,$scope.education, $scope.policy);
 		  console.log("data = " + regData);
 		  console.log("name = "+regData.name);
 		  

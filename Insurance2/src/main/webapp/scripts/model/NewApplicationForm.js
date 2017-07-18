@@ -11,7 +11,7 @@
 //	this.status="New";
 //};
 
-function NewApplicationForm(name,email,mobile,address,ssn,dob,occupation,salary,education,policy) {
+function NewApplicationFormNew(name,email,mobile,address,ssn,dob,occupation,salary,education,policy) {
 	this.name=name;
 	this.email=email;
 	this.mobile=mobile;

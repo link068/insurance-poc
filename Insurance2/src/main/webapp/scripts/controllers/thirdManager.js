@@ -8,6 +8,11 @@
  */
 angular.module('sbAdminApp')
   .controller('ThirdManagerController', function($scope,$http, BaseRestURI) {
+  	// Get saved data from sessionStorage
+  	var email = sessionStorage.getItem('email');
+  	var name = sessionStorage.getItem('name');
+  	$scope.currentUser = name;
+  	
 	  init();
 	  $scope.assignAppDetails = null;
 	  $scope.currentIndex = null;
