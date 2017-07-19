@@ -5,7 +5,10 @@
  */
 
 body {
-    background-color: #f8f8f8;
+/*     background-color: #f8f8f8; */
+		background-image: url("../images/background.jpg");
+		background-size: 1920px 1080px;
+		background-repeat: no-repeat;
 }
 
 #wrapper {
@@ -15,7 +18,7 @@ body {
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;
-    background-color: #fff;
+/*     background-color: #fff; */
 }
 
 @media(min-width:768px) {
