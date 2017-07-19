@@ -37,6 +37,7 @@ angular.module('sbAdminApp')
 			  
 			  var remote = NewApplicationFactory.registerApplication(regData);
 			   remote.then(function(serverResponse){
+				   init();
 				   alert("success");
 				   $('#myModal7').modal('hide');
 				},function(serverResponse){

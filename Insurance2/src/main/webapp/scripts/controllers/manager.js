@@ -32,7 +32,7 @@ angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseR
 		$scope.sendThird = function($index, application) {
 			var remote=$http.put(BaseRestURI+"application/status?id="+application.applicationId +"&status=Accepted");
 			remote.then(function(serverResponse){
-				$scope.applications.splice($index, 1);
+				init();
 				alert("Successfully Sent");
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -42,7 +42,7 @@ angular.module('sbAdminApp').controller('Manager', function($scope, $http, BaseR
 		$scope.decline = function($index, application) {
 			var remote=$http.put(BaseRestURI+"application/status?id="+application.applicationId +"&status=Declined");
 			remote.then(function(serverResponse){
-				$scope.applications.splice($index, 1);
+				init();
 				alert("Successfully Sent");
 			},function(serverResponse){
 				alert("Hey some problems occures in server side processing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
