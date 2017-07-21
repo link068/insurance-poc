@@ -21,6 +21,13 @@
 	<script type="text/javascript" src="scripts/directives/tables/manager/workingApplicationsTable.js"></script>
 	<script type="text/javascript" src="scripts/directives/tables/manager/finishedApplicationsTable.js"></script>
 	<script type="text/javascript" src="scripts/model/ApplicationView.js"></script>
+	
+	<!-- chart stuff -->
+	<script type="text/javascript" src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>	
+	<link rel="stylesheet" type="text/css" ref="bower_components/angular-chart.js/dist/angular-chart.css"/>	
+	<script type="text/javascript" src="scripts/controllers/chartsController.js"></script>
+	<script type="text/javascript" src="scripts/directives/charts/charts.js"></script>
+
 	<style type="text/css">
 	.col-centered {
     display:inline-block;
@@ -51,12 +58,14 @@
 <!--    	<stats class="col-centered" number={{customers.length}} comments="Customers" colour="primary" type="users" ng-click="customersTable = !customersTable"></stats> -->
   	<stats class="col-centered" number={{(applications|filter:{status:'!New'}|filter:{status:'!Finalized'}|filter:{status:'!Declined'}).length}} comments="Pending Applications" colour="yellow" type="folder-open" ng-click="pending = !pending"></stats>
 	  	<stats class="col-centered" number={{(applications|filter:{status:'Finalized'}).length}} comments="Finished Applications" colour="green" type="check" ng-click="finished = !finished"></stats>
+	  	<stats class="col-centered" comments="Charts" colour="primary" type="users" ng-click="charts = !charts"></stats>
   </div>
   
   <div class="col-lg-12">
   	<application-table ng-show="applicationsTable"></application-table>
   	<working-applications-table ng-show="pending"></working-applications-table>
   	<finished-applications-table ng-show="finished"></finished-applications-table>
+  	<charts ng-show="charts"></charts>
 <!--   	<customer-table ng-show="customersTable"></customer-table> -->
  	</div>
 </div>	<!-- wrapper -->
